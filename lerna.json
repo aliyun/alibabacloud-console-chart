@@ -1,0 +1,19 @@
+{
+  "lerna": "2.11.0",
+  "useWorkspaces": true,
+  "npmClient": "yarn",
+  "packages": [
+    "packages/console-bar-chart",
+    "packages/console-chart",
+    "packages/console-combo-chart",
+    "packages/console-dot-chart",
+    "packages/console-funnel-chart",
+    "packages/console-line-chart",
+    "packages/console-miniline-chart",
+    "packages/console-pie-chart",
+    "packages/console-radar-chart",
+    "packages/console-rose-chart",
+    "packages/console-shared-utils"
+  ],
+  "version": "0.0.1"
+}

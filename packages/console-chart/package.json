@@ -1,0 +1,29 @@
+{
+  "name": "@alicloud/console-chart",
+  "version": "0.2.2",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "clean-rpt": "rm -rf .rpt2_cache",
+    "clean": "rm -rf lib es dist",
+    "build": "npm run clean && rollup -c",
+    "prepare": "npm run build",
+    "watch": "rollup -c -w"
+  },
+  "dependencies": {
+    "@alicloud/console-bar-chart": "^0.2.2",
+    "@alicloud/console-combo-chart": "^0.2.2",
+    "@alicloud/console-dot-chart": "^0.2.2",
+    "@alicloud/console-funnel-chart": "^0.2.2",
+    "@alicloud/console-line-chart": "^0.2.2",
+    "@alicloud/console-miniline-chart": "^0.2.2",
+    "@alicloud/console-pie-chart": "^0.2.2",
+    "@alicloud/console-radar-chart": "^0.2.2",
+    "@alicloud/console-rose-chart": "^0.2.2",
+    "@alicloud/console-shared-utils": "^0.2.2"
+  }
+}

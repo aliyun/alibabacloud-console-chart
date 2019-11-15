@@ -1,0 +1,30 @@
+{
+  "name": "@alicloud/console-shared-utils",
+  "version": "0.2.2",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "clean-rpt": "rm -rf .rpt2_cache",
+    "clean": "rm -rf lib es",
+    "build": "npm run clean && rollup -c",
+    "prepare": "npm run build",
+    "watch": "rollup -c -w"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.138",
+    "@types/react": "^16.9.2",
+    "rollup": "1.19.4"
+  },
+  "dependencies": {
+    "@antv/g2": "3.5.8-beta.1",
+    "lodash": "^4.17.15",
+    "tslib": "^1.10.0"
+  }
+}

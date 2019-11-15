@@ -1,0 +1,20 @@
+export default {
+  ConsoleLineChart: {},
+  ConsoleBarChart: {},
+  ConsoleComboChart: {},
+  ConsolePieChart: {},
+  ConsoleMinilineChart: {
+    padding: [0, 0, 0, 0],
+    xAxis: {},
+    yAxis: {},
+    tooltip: false,
+    area: false,
+    smooth: false,
+    symbol: false,
+    label: false,
+  },
+  ConsoleRadarChart: {},
+  ConsoleFunnelChart: {},
+  ConsoleDotChart: {},
+  ConsoleRoseChart: {},
+};

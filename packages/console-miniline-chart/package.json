@@ -1,0 +1,27 @@
+{
+  "name": "@alicloud/console-miniline-chart",
+  "version": "0.2.2",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "es",
+    "dist"
+  ],
+  "scripts": {
+    "clean-rpt": "rm -rf .rpt2_cache",
+    "clean": "rm -rf lib es dist",
+    "build": "npm run clean && rollup -c",
+    "prepare": "npm run build",
+    "watch": "rollup -c -w",
+    "lint": "tslint --project ."
+  },
+  "dependencies": {
+    "@alicloud/console-shared-utils": "^0.2.2",
+    "tslib": "^1.10.0"
+  }
+}
