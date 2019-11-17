@@ -2,6 +2,11 @@
   "lerna": "2.11.0",
   "useWorkspaces": true,
   "npmClient": "yarn",
+  "publish": {
+    "message": "Publish",
+    "npmClient": "npm",
+    "registry": "https://registry.npmjs.org/"
+  },
   "packages": [
     "packages/console-bar-chart",
     "packages/console-chart",
