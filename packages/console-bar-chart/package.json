@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-bar-chart",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -17,7 +17,7 @@
     "watch": "rollup -c -w"
   },
   "dependencies": {
-    "@alicloud/console-shared-utils": "^0.1.0-alpha.1",
+    "@alicloud/console-shared-utils": "^0.1.0-alpha.2",
     "tslib": "^1.10.0"
   },
   "gitHead": "68eb14db1d97cca7f683eb63aad1a05cfd0bf7ee"
