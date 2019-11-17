@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-funnel-chart",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -16,7 +16,7 @@
     "watch": "rollup -c -w"
   },
   "dependencies": {
-    "@alicloud/console-shared-utils": "^0.1.0-alpha.0",
+    "@alicloud/console-shared-utils": "^0.1.0-alpha.1",
     "tslib": "^1.10.0"
   }
 }
