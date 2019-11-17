@@ -3,10 +3,6 @@
   "version": "0.1.0-alpha.2",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
   "files": [
     "lib",
     "es",
@@ -19,6 +15,9 @@
     "prepare": "npm run build",
     "watch": "rollup -c -w",
     "lint": "tslint --project ."
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@alicloud/console-shared-utils": "^0.1.0-alpha.2",

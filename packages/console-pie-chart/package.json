@@ -16,6 +16,9 @@
     "watch": "rollup -c -w",
     "lint": "tslint --project ."
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@alicloud/console-shared-utils": "^0.1.0-alpha.2",
     "tslib": "^1.10.0"
