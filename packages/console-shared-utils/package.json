@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-shared-utils",
-  "version": "0.2.2",
+  "version": "0.1.0-alpha.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -14,6 +14,9 @@
     "prepare": "npm run build",
     "watch": "rollup -c -w"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "react": "^16.9.0"
   },
@@ -26,5 +29,6 @@
     "@antv/g2": "3.5.8-beta.1",
     "lodash": "^4.17.15",
     "tslib": "^1.10.0"
-  }
+  },
+  "gitHead": "c79b139c3484d9590cfe3e43b106c5e718bf2ff9"
 }
