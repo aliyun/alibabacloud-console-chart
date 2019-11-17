@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-rose-chart",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-beta.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -20,7 +20,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@alicloud/console-shared-utils": "^0.1.0-alpha.3",
+    "@alicloud/console-shared-utils": "^0.1.0-beta.1",
     "tslib": "^1.10.0"
   },
   "gitHead": "c79b139c3484d9590cfe3e43b106c5e718bf2ff9"
