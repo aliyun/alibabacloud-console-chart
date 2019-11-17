@@ -1,25 +1,30 @@
 # Console Chart
 
-> 阿里云控制台业务图表库
-
-旨在提供一款**开箱即用、统一视觉方案**的图表组件库。
+> Console Chart 是阿里云云管控解决方案开发套件的一部分。旨在为用户提供一款**开箱即用、统一视觉方案**的图表组件库。
 
 ## Install
 
 ```bash
-yarn add @alicloud/console-chart --save
+npm install @alicloud/console-chart --save
 ```
 
 ## Usage
 
 ```js
-
 // 引入组件
-import { ConsoleLineChart  } from '@alicloud/console-line-chart';
+import { ConsoleLineChart } from "@alicloud/console-chart";
 
-<ConsoleLineChart data={ ...data } config={config} />
+<ConsoleLineChart data={data} config={config} />;
 ```
 
-## Development
+## API 文档
+
+[API 文档](https://www.yuque.com/books/share/7440794a-4a7c-4930-a1e4-f06cdd6d804f)
+
+## CONTRIBUTING
 
 代码贡献请参考 [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## CHANGELOG
+
+版本日志请参考 [CHANGELOG.md](CHANGELOG.md)

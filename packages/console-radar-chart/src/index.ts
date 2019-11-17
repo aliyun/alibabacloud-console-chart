@@ -52,7 +52,7 @@ const cfg = {
       radius: Math.min(radius, 1),
     });
 
-    const xLabelFormatter = Utils.get(config, 'xAxis.laberFormatter');
+    const xLabelFormatter = Utils.get(config, 'xAxis.label.formatter');
 
     chart.axis('x', {
       label: {
@@ -66,7 +66,7 @@ const cfg = {
         },
       },
     });
-    const yLabelFormatter = Utils.get(config, 'yAxis.labelFormatter');
+    const yLabelFormatter = Utils.get(config, 'yAxis.label.formatter');
     chart.axis('y', {
       label: {
         offset: 8,
