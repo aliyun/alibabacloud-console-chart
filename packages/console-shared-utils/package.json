@@ -26,5 +26,6 @@
     "@antv/g2": "3.5.8-beta.1",
     "lodash": "^4.17.15",
     "tslib": "^1.10.0"
-  }
+  },
+  "gitHead": "68eb14db1d97cca7f683eb63aad1a05cfd0bf7ee"
 }

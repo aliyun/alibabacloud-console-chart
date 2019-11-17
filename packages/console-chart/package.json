@@ -25,5 +25,6 @@
     "@alicloud/console-radar-chart": "^0.1.0-alpha.1",
     "@alicloud/console-rose-chart": "^0.1.0-alpha.1",
     "@alicloud/console-shared-utils": "^0.1.0-alpha.1"
-  }
+  },
+  "gitHead": "68eb14db1d97cca7f683eb63aad1a05cfd0bf7ee"
 }
