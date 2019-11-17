@@ -4,7 +4,7 @@
     "clean": "lerna clean",
     "reinstall": "yarn run clear && yarn install",
     "lint": "lerna run lint",
-    "publish": "lerna publish -- --access public",
+    "publish": "lerna publish",
     "build": "lerna run build",
     "dev": "start-storybook -p 9001 -c .storybook ",
     "bootstrap": "lerna bootstrap"
