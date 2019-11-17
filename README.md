@@ -17,6 +17,10 @@ import { ConsoleLineChart } from "@alicloud/console-chart";
 <ConsoleLineChart data={data} config={config} />;
 ```
 
+## API 文档
+
+[API 文档](https://www.yuque.com/books/share/7440794a-4a7c-4930-a1e4-f06cdd6d804f)
+
 ## CONTRIBUTING
 
 代码贡献请参考 [CONTRIBUTING.md](CONTRIBUTING.md)
