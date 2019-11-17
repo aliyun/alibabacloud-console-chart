@@ -1,7 +1,17 @@
 {
-  "lerna": "2.11.0",
   "useWorkspaces": true,
   "npmClient": "yarn",
+  "publish": {
+    "message": "Publish",
+    "npmClient": "npm",
+    "registry": "https://registry.npmjs.org/",
+    "version": {
+      "allowBranch": [
+        "master",
+        "develop"
+      ]
+    }
+  },
   "packages": [
     "packages/console-bar-chart",
     "packages/console-chart",
@@ -15,5 +25,5 @@
     "packages/console-rose-chart",
     "packages/console-shared-utils"
   ],
-  "version": "0.0.1"
+  "version": "0.1.0-alpha.3"
 }
