@@ -6,7 +6,10 @@
     "npmClient": "npm",
     "registry": "https://registry.npmjs.org/",
     "version": {
-      "allowBranch": ["master", "develop"]
+      "allowBranch": [
+        "master",
+        "develop"
+      ]
     }
   },
   "packages": [
@@ -22,5 +25,5 @@
     "packages/console-rose-chart",
     "packages/console-shared-utils"
   ],
-  "version": "0.0.1-alpha.0"
+  "version": "0.1.0-alpha.0"
 }

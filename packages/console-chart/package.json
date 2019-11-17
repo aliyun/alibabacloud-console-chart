@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-chart",
-  "version": "0.2.2",
+  "version": "0.1.0-alpha.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -15,15 +15,15 @@
     "watch": "rollup -c -w"
   },
   "dependencies": {
-    "@alicloud/console-bar-chart": "^0.2.2",
-    "@alicloud/console-combo-chart": "^0.2.2",
-    "@alicloud/console-dot-chart": "^0.2.2",
-    "@alicloud/console-funnel-chart": "^0.2.2",
-    "@alicloud/console-line-chart": "^0.2.2",
-    "@alicloud/console-miniline-chart": "^0.2.2",
-    "@alicloud/console-pie-chart": "^0.2.2",
-    "@alicloud/console-radar-chart": "^0.2.2",
-    "@alicloud/console-rose-chart": "^0.2.2",
-    "@alicloud/console-shared-utils": "^0.2.2"
+    "@alicloud/console-bar-chart": "^0.1.0-alpha.0",
+    "@alicloud/console-combo-chart": "^0.1.0-alpha.0",
+    "@alicloud/console-dot-chart": "^0.1.0-alpha.0",
+    "@alicloud/console-funnel-chart": "^0.1.0-alpha.0",
+    "@alicloud/console-line-chart": "^0.1.0-alpha.0",
+    "@alicloud/console-miniline-chart": "^0.1.0-alpha.0",
+    "@alicloud/console-pie-chart": "^0.1.0-alpha.0",
+    "@alicloud/console-radar-chart": "^0.1.0-alpha.0",
+    "@alicloud/console-rose-chart": "^0.1.0-alpha.0",
+    "@alicloud/console-shared-utils": "^0.1.0-alpha.0"
   }
 }

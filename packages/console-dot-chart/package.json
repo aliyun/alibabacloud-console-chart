@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-dot-chart",
-  "version": "0.2.2",
+  "version": "0.1.0-alpha.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "directories": {
@@ -21,7 +21,7 @@
     "lint": "tslint --project ."
   },
   "dependencies": {
-    "@alicloud/console-shared-utils": "^0.2.2",
+    "@alicloud/console-shared-utils": "^0.1.0-alpha.0",
     "tslib": "^1.10.0"
   }
 }
