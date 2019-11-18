@@ -5,14 +5,14 @@
 ```bash
 git clone git@github.com:aliyun/alibabacloud-console-chart.git
 
-cd root-package
+cd alibabacloud-console-chart
 
 yarn
 ```
 
 ## demo 预览
 
-项目 demo 放置在每个图表  子目录中， 在项目根目录执行命令：
+项目 demo 放置在每个图表子目录中， 在项目根目录执行命令：
 
 ```bash
 npm run dev
