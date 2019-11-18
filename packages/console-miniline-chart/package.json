@@ -19,6 +19,8 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": "https://github.com/aliyun/alibabacloud-console-chart/tree/master/packages/console-miniline-chart",
+  "license": "MIT",
   "dependencies": {
     "@alicloud/console-shared-utils": "^0.1.0-alpha.3",
     "tslib": "^1.10.0"
