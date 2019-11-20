@@ -15,7 +15,8 @@ yarn
 项目 demo 放置在每个图表子目录中， 在项目根目录执行命令：
 
 ```bash
-npm run dev
+yarn build
+yarn dev
 ```
 
 可打开: http://localhost:9001 查看 demo 情况
@@ -27,7 +28,7 @@ npm run dev
 ```bash
 cd packages/console-***-chart
 
-npm run watch
+yarn watch
 ```
 
 开启 watch，这时候所有的改动都会被 demo 服务感知，可实时查看更改后的效果。
