@@ -6,6 +6,7 @@
 !.gitattributes
 !.aoneci.yml
 !.editorconfig
+!.storybook
 
 lerna-debug.json
 # Logs
