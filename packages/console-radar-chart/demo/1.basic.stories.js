@@ -4,9 +4,10 @@ import Chart from '../es/index.js';
 
 const data = [
   {
-    name: '清华',
-    data: [['Chinese', 20], ['English', 10], ['Math', 15]],
-  },
+    name: 'oss',
+    data: [['specification', 29], ['feature', 28], ['doc', 31]],
+    color: '#E288CE',
+  }
 ];
 
 const config = {
