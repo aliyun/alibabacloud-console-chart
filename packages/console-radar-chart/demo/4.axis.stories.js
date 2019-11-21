@@ -13,10 +13,18 @@ const data = [
 const config = {
   xAxis: {
     label: {
-      formatter: val => val + '~'
+      htmlTemplate: (val, item, index) => {
+        console.log(val, item, index);
+        return `
+          <div>
+            <div style="text-align: center;">${val}</div>
+            <div style="text-align: center;">${index}</div>
+          </div>
+        `;
+      }
     }
   },
 };
-storiesOf('ConsoleRadarChart', module).add('基本用法', () => (
+storiesOf('ConsoleRadarChart', module).add('自定义坐标轴', () => (
   <Chart data={data} config={config} height={300} />
 ));

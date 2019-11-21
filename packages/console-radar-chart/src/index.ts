@@ -51,40 +51,8 @@ const cfg = {
     chart.coord('polar', {
       radius: Math.min(radius, 1),
     });
-
-    const xLabelFormatter = Utils.get(config, 'xAxis.label.formatter');
-
-    chart.axis('x', {
-      label: {
-        formatter: xLabelFormatter,
-      },
-      line: null,
-      tickLine: null,
-      grid: {
-        lineStyle: {
-          lineDash: null,
-        },
-      },
-    });
-    const yLabelFormatter = Utils.get(config, 'yAxis.label.formatter');
-    chart.axis('y', {
-      label: {
-        offset: 8,
-        textStyle: {
-          // fill: '#ff0000',
-          textAlign: 'right', // 文本右对齐
-        },
-        formatter: yLabelFormatter,
-      },
-      line: null,
-      tickLine: null,
-      grid: {
-        type: 'polygon',
-        lineStyle: {
-          lineDash: null,
-        },
-      },
-    });
+    chart.axis('x', config.xAxis);
+    chart.axis('y', config.yAxis);
 
     g2Tooltip(chart, config, config.tooltip, {
       crosshairs: null,

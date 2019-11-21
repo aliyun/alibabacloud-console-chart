@@ -13,7 +13,34 @@ export default {
     symbol: false,
     label: false,
   },
-  ConsoleRadarChart: {},
+  ConsoleRadarChart: {
+    xAxis: {
+      label: {},
+      line: null,
+      tickLine: null,
+      grid: {
+        lineStyle: {
+          lineDash: null,
+        },
+      },
+    },
+    yAxis: {
+      label: {
+        offset: 8,
+        textStyle: {
+          textAlign: 'right',
+        },
+      },
+      line: null,
+      tickLine: null,
+      grid: {
+        type: 'polygon',
+        lineStyle: {
+          lineDash: null,
+        },
+      },
+    },
+  },
   ConsoleFunnelChart: {},
   ConsoleDotChart: {},
   ConsoleRoseChart: {},

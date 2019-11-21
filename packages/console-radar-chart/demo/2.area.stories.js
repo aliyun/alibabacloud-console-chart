@@ -5,7 +5,7 @@ import Chart from '../es/index.js';
 const data = [
   {
     name: 'oss',
-    data: [['specification', 25], ['feature', 24], ['docs', 26]],
+    data: [['specification', 25], ['feature', 24], ['doc', 26]],
     color: '#E288CE',
   }
 ];
@@ -24,11 +24,11 @@ const config = {
       },
       {
         start: ['specification', 25.5],
-        end: ['docs', 25.5],
+        end: ['doc', 25.5],
       },
       {
         start: ['feature', 25.5],
-        end: ['docs', 25.5],
+        end: ['doc', 25.5],
       }
     ],
   },
