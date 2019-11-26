@@ -5,7 +5,7 @@ const path = require("path");
 module.exports = {
   // 该页面会部署到 `aliyun.github.io/alibabacloud-console-components`路径下
   // 请根据你的项目名修改
-  pathPrefix: `/alibabacloud-console-components`,
+  pathPrefix: `/alibabacloud-console-chart`,
   plugins: [
     {
       resolve: `@alicloud/gatsby-theme-console-doc`,
@@ -13,12 +13,12 @@ module.exports = {
         // 用于SEO
         siteMetadata: {
           // 会生成标题如：按钮 · Console components
-          titleTemplate: "%s · Console components",
+          titleTemplate: "%s · Console Chart",
           description:
-            "Console Components 是针对阿里云控制台场景的React组件解决方案。"
+            "Console Chart 是阿里云云管控解决方案开发套件的一部分。旨在为用户提供一款开箱即用、统一视觉方案的图表组件库。"
         },
         // 入口页面，即点击左上角logo跳转的地址，以及访问`/`跳转的地址
-        primaryPath: "/components/component-1",
+        primaryPath: "/components/console-bar-chart",
         // 从文件系统爬取.md和.mdx（我们会忽略不包含frontmatter.name的markdown文档）
         fileSystemCrawlers: [
           {
@@ -72,7 +72,7 @@ module.exports = {
         // 顶部导航
         topNav: [
           { text: "指南", href: "/guides/quick-start" },
-          { text: "组件文档", href: "/components/component-1" }
+          { text: "组件文档", href: "/components/console-bar-chart" }
         ],
         // 左侧导航
         // 左侧导航与顶部导航的区别：

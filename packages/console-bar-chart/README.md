@@ -1,5 +1,5 @@
 ---
-name: console-bar=chart
+name: console-bar-chart
 zhName: 柱状图
 ---
 
