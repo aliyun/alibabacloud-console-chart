@@ -1,3 +1,8 @@
+---
+name: console-bar=chart
+zhName: 柱状图
+---
+
 # Console Chart
 
 > Console Chart 是阿里云云管控解决方案开发套件的一部分。旨在为用户提供一款**开箱即用、统一视觉方案**的柱状类型图表组件库。
