@@ -1,3 +1,8 @@
+---
+name: console-combo-chart
+zhName: 组合图
+---
+
 # Console Chart
 
 > Console Chart 是阿里云云管控解决方案开发套件的一部分。旨在为用户提供一款**开箱即用、统一视觉方案**的线柱组合型图表组件库。
