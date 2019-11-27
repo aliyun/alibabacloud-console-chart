@@ -9,6 +9,7 @@
 !.storybook
 !..demoProjectTemplate
 
+site/public/
 lerna-debug.json
 # Logs
 logs

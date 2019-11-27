@@ -6,6 +6,7 @@
     "lint": "lerna run lint",
     "publish": "lerna publish",
     "build": "lerna run build",
+    "push-site": "cd site && yarn push-build",
     "dev": "start-storybook -p 9001 -c .storybook ",
     "bootstrap": "lerna bootstrap"
   },
