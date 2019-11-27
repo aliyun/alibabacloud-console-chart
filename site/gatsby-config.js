@@ -13,7 +13,7 @@ module.exports = {
         // 用于SEO
         siteMetadata: {
           // 会生成标题如：按钮 · Console components
-          titleTemplate: "%s · Console Chart",
+          siteName: "Console Chart",
           description:
             "Console Chart 是阿里云云管控解决方案开发套件的一部分。旨在为用户提供一款开箱即用、统一视觉方案的图表组件库。"
         },
