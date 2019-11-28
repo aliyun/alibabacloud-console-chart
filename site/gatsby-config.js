@@ -44,7 +44,7 @@ module.exports = {
         // 每个文档都需要有一个类目，文档的访问路径就是`/类目name/文档name`
         // 类目还被用于给左侧导航栏分类、搜索结果分类
         patchDocInfo: docInfo => {
-          debugger;
+          // debugger;
 
           // 调试指南：
           // npm run debug
@@ -117,7 +117,12 @@ module.exports = {
             // 导航栏需要为哪些类目导航
             navCategories
           };
-        }
+        },
+        // 不将demo组件打包到首屏bundle（以及SSR）中
+        // 一些npm包（比如antv）不支持SSR，如果你的demo中用了这些包，
+        // 就需要将bundleDemo设置为false
+        // 默认为true
+        bundleDemo: false,
       }
     }
   ]

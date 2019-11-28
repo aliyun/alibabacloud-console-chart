@@ -7,7 +7,7 @@
 !.aoneci.yml
 !.editorconfig
 !.storybook
-!..demoProjectTemplate
+!.demoProjectTemplate
 
 site/public/
 lerna-debug.json

@@ -1,5 +1,5 @@
 import React from 'react';
-import Chart from '../es/index.js';
+import { ConsoleBarChart } from '@alicloud/console-chart';
 
 const data = [
   {
@@ -23,7 +23,7 @@ class Basic extends React.Component {
     }, 2000);
   }
   render() {
-    return <Chart data={data} config={this.state.config} height={300} />;
+    return <ConsoleBarChart data={data} config={this.state.config} height={300} />;
   }
 }
 

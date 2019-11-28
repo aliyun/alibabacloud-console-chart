@@ -12,5 +12,8 @@ module.exports = ({ config }) => {
     ],
   });
   config.resolve.extensions.push('.ts', '.tsx');
+  config.resolve.alias = {
+    '@alicloud': path.resolve(__dirname, 'packages/'),
+  };
   return config;
 };
