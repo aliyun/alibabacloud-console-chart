@@ -1,34 +1,70 @@
-# Console Chart
+---
+name: console-radar-chart
+zhName: 雷达图
+---
 
-> Console Chart 是阿里云云管控解决方案开发套件的一部分。旨在为用户提供一款**开箱即用、统一视觉方案**的雷达类型的图表组件库。
+# 雷达图API
 
-## Install
+# 引入方式
 
-```bash
-npm install @alicloud/console-radar-chart --save
+```javascript
+import { ConsoleRadarChart } from '@alicloud/console-chart';
 ```
 
-## Usage
+# 示例 Demo
 
-```js
-// 引入组件
-import ConsoleRadarChart from "@alicloud/console-radar-chart";
+## 基本使用
 
-<ConsoleRadarChart data={data} config={config} />;
-```
+[MDXInstruction:importDemo:basic](./demo/basic.tsx)
 
-## API 文档
+## 面积图
 
-[API 文档](https://www.yuque.com/books/share/7440794a-4a7c-4930-a1e4-f06cdd6d804f)
+[MDXInstruction:importDemo:basic](./demo/area.tsx)
 
-## CONTRIBUTING
+## 多组数据
 
-代码贡献请参考 [CONTRIBUTING.md](CONTRIBUTING.md)
+[MDXInstruction:importDemo:basic](./demo/multi.tsx)
 
-## CHANGELOG
+## 自定义坐标轴
 
-版本日志请参考 [CHANGELOG.md](CHANGELOG.md)
+[MDXInstruction:importDemo:basic](./demo/axis.tsx)
 
-## LICENSE
+# 配置 Config
 
-ConsoleBarChart is [MIT licensed](https://github.com/aliyun/alibabacloud-console-chart/blob/master/LICENSE)
+## 通用配置
+| 属性 | 说明 |
+| --- | --- |
+| padding | 配置绘图内边距 |
+| xAxis | 配置x轴 |
+| yAxis | 配置y轴 |
+| legend | 配置图例 |
+| guide | 配置辅助元素 |
+| tooltip | 配置提示信息 |
+| label | 配置图形文本 |
+| size | 配置自定义大小 |
+| style | 配置自定义样式 |
+
+## 专属配置
+
+### symbol: Boolean
+是否展示数据点
+
+### smooth: Boolean
+显示成光滑曲线
+
+### area: Boolean
+是否显示面积雷达图
+
+### stack: Boolean
+是否显示堆栈图, 仅在`area=true`时生效
+
+### radius: Number
+设置极坐标系的半径，可控制显示图形的大小
+
+## 数据列配置
+
+| 属性 | 说明 | 类型 | 默认值 | 可选值 |
+| --- | --- | --- | --- | --- |
+| name | 数据列名称 | String | - | - |
+| data | 数据 | - | - | - |
+| color | 自定义当前数据列颜色 | String | 主题`color_24` | - |

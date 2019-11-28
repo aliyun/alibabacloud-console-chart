@@ -17,7 +17,7 @@ import { ConsolePieChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:basic](./demo/basic.tsx)
 
-# 配置 配置
+# 配置 Config
 
 ## 通用配置
 
