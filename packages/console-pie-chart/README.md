@@ -1,34 +1,60 @@
-# Console Chart
+---
+name: console-pie-chart
+zhName: 饼图
+---
 
-> Console Chart 是阿里云云管控解决方案开发套件的一部分。旨在为用户提供一款**开箱即用、统一视觉方案**的饼图类型的图表组件库。
+# 饼图API
 
-## Install
+# 引入方式
 
-```bash
-npm install @alicloud/console-pie-chart --save
+```javascript
+import { ConsolePieChart } from '@alicloud/console-chart';
 ```
 
-## Usage
+# 示例 Demo
 
-```js
-// 引入组件
-import ConsolePieChart from "@alicloud/console-pie-chart";
+## 基本使用
 
-<ConsolePieChart data={data} config={config} />;
-```
+[MDXInstruction:importDemo:basic](./demo/basic.tsx)
 
-## API 文档
+# 配置 配置
 
-[API 文档](https://www.yuque.com/books/share/7440794a-4a7c-4930-a1e4-f06cdd6d804f)
+## 通用配置
 
-## CONTRIBUTING
+| 属性 | 说明 |
+| --- | --- |
+| padding | 配置绘图内边距 |
+| xAxis | 配置x轴 |
+| yAxis | 配置y轴 |
+| legend | 配置图例 |
+| guide | 配置辅助元素 |
+| tooltip | 配置提示信息 |
+| label | 配置图形文本 |
+| size | 配置自定义大小 |
+| style | 配置自定义样式 |
 
-代码贡献请参考 [CONTRIBUTING.md](CONTRIBUTING.md)
+## 专属配置
 
-## CHANGELOG
+### autoSort: Boolean
+是否需要按照从大到小的顺序排序
 
-版本日志请参考 [CHANGELOG.md](CHANGELOG.md)
+### cycle: Boolean
+是否将饼状图转变为环状图
 
-## LICENSE
+### innerRadius: Number
+内圈半径，需要配合`cycle`使用
 
-ConsoleBarChart is [MIT licensed](https://github.com/aliyun/alibabacloud-console-chart/blob/master/LICENSE)
+### select: Boolean
+是否支持选中态
+
+### selectData: String
+选中的数据
+
+### colors: String|Array
+自定义颜色
+
+## 数据列配置
+| 属性 | 说明 | 类型 | 默认值 | 可选值 |
+| --- | --- | --- | --- | --- |
+| name | 数据列名称 | String | - | - |
+| data | 数据 | Array | - | - |
