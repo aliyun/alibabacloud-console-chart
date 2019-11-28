@@ -1,6 +1,7 @@
 ---
 name: config-size
 zhName: 配置-大小
+sort: 14
 ---
 
 # config-size自定义

@@ -1,6 +1,7 @@
 ---
 name: config
 zhName: 通用配置
+sort: 6
 ---
 
 # config 配置

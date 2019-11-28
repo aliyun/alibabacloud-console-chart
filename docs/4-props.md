@@ -1,6 +1,7 @@
 ---
 name: props
 zhName: 属性
+sort: 4
 ---
 
 # 组件 props

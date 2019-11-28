@@ -1,6 +1,7 @@
 ---
 name: config-label
 zhName: 配置-文本
+sort: 11
 ---
 
 # config-图形文本

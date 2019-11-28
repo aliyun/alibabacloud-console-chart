@@ -1,6 +1,7 @@
 ---
 name: config-x
 zhName: 配置-x轴
+sort: 7
 ---
 
 # config-x轴

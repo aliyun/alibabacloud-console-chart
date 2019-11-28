@@ -1,6 +1,7 @@
 ---
 name: config-y
 zhName: 配置-y轴
+sort: 8
 ---
 
 # config-y轴

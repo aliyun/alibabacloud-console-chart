@@ -1,6 +1,7 @@
 ---
 name: config-tooltip
 zhName: 配置-提示信息
+sort: 10
 ---
 
 # config-提示信息

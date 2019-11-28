@@ -1,6 +1,7 @@
 ---
 name: contributing
 zhName: 贡献指南
+sort: 3
 ---
 
 # 贡献指南

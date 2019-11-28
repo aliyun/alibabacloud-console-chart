@@ -1,6 +1,7 @@
 ---
 name: concepts
 zhName: 基本介绍
+sort: 2
 ---
 
 # 图表库简介

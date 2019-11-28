@@ -1,6 +1,7 @@
 ---
 name: config-style
 zhName: 配置-样式
+sort: 13
 ---
 
 # config-自定义样式

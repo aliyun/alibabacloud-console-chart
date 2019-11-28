@@ -2,44 +2,44 @@
 # yarn lockfile v1
 
 
-"@alicloud/console-components-app-layout@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@alicloud/console-components-app-layout/-/console-components-app-layout-1.0.1.tgz#9e58408fecf586ee5b7bbc9a0f2e6de7570451d2"
-  integrity sha512-jAdEBxJMVJR++TIdcsTkcngAmLsTxU+z8rya1G0ibAsBOea2BJvzJc5JSohTqkx9b6nlEDhV1gt/DvF3ldqMNQ==
+"@alicloud/console-components-app-layout@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@alicloud/console-components-app-layout/-/console-components-app-layout-1.0.2.tgz#dfb1cb252b8c6e073dc9987c5441d299bf26c223"
+  integrity sha512-+EWGViwIlTKp7HXxAXDrMWftkaD7DLNP6jHMahQuj24+HUg7SLcqDZugXhszMrPeU3Awc/jt4H+ZLmH7cBAY4w==
   dependencies:
     "@babel/runtime" "^7.4.3"
     classnames "^2.2.5"
 
-"@alicloud/console-components-console-menu@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@alicloud/console-components-console-menu/-/console-components-console-menu-1.0.1.tgz#00366f0d33a5976e5a14c3119cbe735a3eab865e"
-  integrity sha512-EngARdl+suwdqg5Eb/zQ23bHcyron/Luj8Fig3krVKE9zuQDSOpUVC0gs1KlQyfmoYlEpkpW8PN0Ox0UM6yD2Q==
+"@alicloud/console-components-console-menu@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@alicloud/console-components-console-menu/-/console-components-console-menu-1.0.2.tgz#83687b9921685b001b5ca5042ec6c6a60606a76f"
+  integrity sha512-BsrRhxVs3T5RwUS1MQTJeWIdanEvg2naEDyWPU51o5mR6uLsdhpf/upmYuoGr/QoYUwRkxJRJPoxJa6t8Y/yFg==
   dependencies:
     "@babel/runtime" "^7.5.5"
     classnames "^2.2.6"
     warning "^4.0.3"
 
-"@alicloud/console-components-page@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@alicloud/console-components-page/-/console-components-page-1.0.1.tgz#b121a4944d0b275623843bd9a556595ab5072a66"
-  integrity sha512-okCbtZVL9vgkqbbvT42gTzxmdBi70lm6clNGcjh3UMiC6GWe3oROHXDgRPnRxSeOygoTq8NIcBk2ckkZcNS7XA==
+"@alicloud/console-components-page@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@alicloud/console-components-page/-/console-components-page-1.0.2.tgz#62677902ec23dee2cc726d05b3ccbbdfc8e43ce6"
+  integrity sha512-8TyTU2TBPBEGBWVSkx1btzbq/c2dKNcnbzh5yc391tirs+f1mEt6vV65spAdc+prF54mJvo397ha7qBXVqRvLg==
   dependencies:
-    "@alicloud/console-components-truncate" "^1.0.1"
+    "@alicloud/console-components-truncate" "^1.0.2"
     "@researchgate/react-intersection-observer" "^1.0.1"
 
-"@alicloud/console-components-truncate@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@alicloud/console-components-truncate/-/console-components-truncate-1.0.1.tgz#e774cdb0ceebcb8851f612c99a9855e2f770781f"
-  integrity sha512-2uBmVIY+CxEcUoNcp6Ff0JKc1C2mBBJ9JUyLGXfcV3bgx6Trqbr9z5iXBdWSjfoC/EUqQLzhgoyHuPU86e+6lA==
+"@alicloud/console-components-truncate@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@alicloud/console-components-truncate/-/console-components-truncate-1.0.2.tgz#c322806e4455d3606ead5b59b0c70e270e2c53ec"
+  integrity sha512-7yvDSx05i/HVBsxtvq/7238PBWc2worLwduDrgZyJ2k5GnutjmCr+oOzqSlm9K6z8w9t+UNsfitVCgJRfG0OzA==
   dependencies:
     classnames "^2.2.5"
     lodash "^4.17.15"
     react-sizeme "^2.6.7"
 
-"@alicloud/console-components@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@alicloud/console-components/-/console-components-1.0.11.tgz#110bf4ec3e22b1debc35163527b6aa99d38feab0"
-  integrity sha512-QMgLltyqF/MvCcuYDIr6nSLmGFRCPUfaT/NDV/5tuK+lFs7aEd3/cXZXiDAumqAExmJ6DFY/jLvjWYljkuaPOA==
+"@alicloud/console-components@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@alicloud/console-components/-/console-components-1.0.12.tgz#121a96d74e76f98c4215484f78c1dd47b0b50774"
+  integrity sha512-no9nBVSUrz/zk7iCVZJjQuwI7PK6rZwbXllB98ZgrZiZqn5fBhCozurmTDGYjVXJCeAab3SaYdifs61bbVq3cQ==
   dependencies:
     "@alifd/next" "~1.18.15"
     "@babel/runtime-corejs2" "^7.7.4"
@@ -49,15 +49,15 @@
     rc-form "^2.2.1"
     recompose "^0.26.0"
 
-"@alicloud/gatsby-theme-console-doc@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@alicloud/gatsby-theme-console-doc/-/gatsby-theme-console-doc-1.0.2.tgz#1ee8ff43c9f7ec57bd2d432e98a946d2dce8daa5"
-  integrity sha512-5VaC0QwB+8LVEncTfQ/ImHMShBnkO5gUDRWl5btFppuaOOIFhfgwnAS/cou/xhMLhXAwfli6hKuvXYxMdZkxDg==
+"@alicloud/gatsby-theme-console-doc@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@alicloud/gatsby-theme-console-doc/-/gatsby-theme-console-doc-1.0.4.tgz#96ba217275cf8b75554b18ec13ad8cec8cfcb777"
+  integrity sha512-9lk6FSFbE3s6JYQajJbe+Wr36w4wHx75mpvj+jyFjDQSbHlMUaNONfKp4u8822B2PT9FcVSBd81vRc2pLyZSSA==
   dependencies:
-    "@alicloud/console-components" "^1.0.11"
-    "@alicloud/console-components-app-layout" "^1.0.1"
-    "@alicloud/console-components-console-menu" "^1.0.1"
-    "@alicloud/console-components-page" "^1.0.1"
+    "@alicloud/console-components" "^1.0.12"
+    "@alicloud/console-components-app-layout" "^1.0.2"
+    "@alicloud/console-components-console-menu" "^1.0.2"
+    "@alicloud/console-components-page" "^1.0.2"
     "@mdx-js/mdx" "^1.5.1"
     "@mdx-js/react" "^1.5.1"
     babel-plugin-styled-components "^1.10.6"

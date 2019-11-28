@@ -1,6 +1,7 @@
 ---
 name: config-legend
 zhName: 配置-图例
+sort: 9
 ---
 
 # config-图例

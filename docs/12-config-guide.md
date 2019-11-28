@@ -1,6 +1,7 @@
 ---
 name: config-guide
 zhName: 配置-辅助元素
+sort: 12
 ---
 
 # config-辅助元素

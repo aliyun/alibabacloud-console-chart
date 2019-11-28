@@ -52,12 +52,14 @@ module.exports = {
           // 即可在调试期间停在这个地方，查看docInfo的结构
           if (docInfo.fileSystemCrawlerName === "comp-crawler") {
             return {
-              category: "components"
+              category: "components",
+              // labelInMenu: docInfo.zhName,
             };
           }
           if (docInfo.fileSystemCrawlerName === "guides-crawler") {
             return {
-              category: "guides"
+              category: "guides",
+              labelInMenu: docInfo.zhName,
             };
           }
           throw new Error(

@@ -1,6 +1,7 @@
 ---
 name: quick-start
 zhName: 快速开始
+sort: 1
 ---
 
 # 入门指南
