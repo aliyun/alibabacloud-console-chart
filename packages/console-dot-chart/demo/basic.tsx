@@ -1,6 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import Chart from '../es/index.js';
+import { ConsoleDotChart } from '@alicloud/console-chart';
 
 const data = [
   {
@@ -18,6 +17,7 @@ const config = {
     min: 0,
   },
 };
-storiesOf('ConsoleDotChart', module).add('基本用法', () => (
-  <Chart data={data} config={config} height={300} />
-));
+
+export default () => (
+  <ConsoleDotChart data={data} config={config} height={300} />
+);
