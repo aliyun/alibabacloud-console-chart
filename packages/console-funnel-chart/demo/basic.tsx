@@ -1,5 +1,5 @@
 import React from 'react';
-import Chart from '../es/index.js';
+import { ConsoleFunnelChart } from '@alicloud/console-chart';
 
 const data = [
   {
@@ -11,5 +11,5 @@ const data = [
 const config = {};
 
 export default () => (
-  <Chart data={data} config={config} height={300} />
+  <ConsoleFunnelChart data={data} config={config} height={300} />
 );
