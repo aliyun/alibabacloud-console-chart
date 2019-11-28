@@ -10,8 +10,6 @@ zhName: 柱状图
 # 引入方式
 
 ```javascript
-import ConsoleBarChart from '@alicloud/console-bar-chart';
-// or
 import { ConsoleBarChart } from '@alicloud/console-chart';
 ```
 

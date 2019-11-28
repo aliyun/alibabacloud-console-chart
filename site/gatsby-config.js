@@ -18,7 +18,7 @@ module.exports = {
             "Console Chart 是阿里云云管控解决方案开发套件的一部分。旨在为用户提供一款开箱即用、统一视觉方案的图表组件库。"
         },
         // 入口页面，即点击左上角logo跳转的地址，以及访问`/`跳转的地址
-        primaryPath: "/components/console-bar-chart",
+        primaryPath: "/guides/quick-start",
         // 从文件系统爬取.md和.mdx（我们会忽略不包含frontmatter.name的markdown文档）
         fileSystemCrawlers: [
           {
@@ -28,7 +28,7 @@ module.exports = {
           },
           {
             name: "guides-crawler",
-            rootDir: path.resolve(__dirname, "./guides")
+            rootDir: path.resolve(__dirname, "../docs")
           }
         ],
         // 透传给webpack选项resolve.module：https://webpack.js.org/configuration/resolve/#resolvemodules
