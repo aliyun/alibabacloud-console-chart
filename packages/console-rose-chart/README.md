@@ -1,34 +1,37 @@
-# Console Chart
+---
+name: console-rose-chart
+zhName: 玫瑰图
+---
 
-> Console Chart 是阿里云云管控解决方案开发套件的一部分。旨在为用户提供一款**开箱即用、统一视觉方案**的玫瑰类型的图表组件库。
+# 玫瑰图API
 
-## Install
+# 引入方式
 
-```bash
-npm install @alicloud/console-radar-chart --save
+```javascript
+import { ConsoleRoseChart } from '@alicloud/console-chart';
 ```
 
-## Usage
+# Config配置
 
-```js
-// 引入组件
-import ConsoleRoseChart from "@alicloud/console-rose-chart";
+## 通用配置
 
-<ConsoleRoseChart data={data} config={config} />;
-```
+| 属性 | 说明 |
+| --- | --- |
+| padding | 配置绘图内边距 |
+| xAxis | 配置x轴 |
+| yAxis | 配置y轴 |
+| legend | 配置图例 |
+| guide | 配置辅助元素 |
+| tooltip | 配置提示信息 |
+| label | 配置图形文本 |
+| size | 配置自定义大小 |
+| style | 配置自定义样式 |
 
-## API 文档
+## 专属配置
 
-[API 文档](https://www.yuque.com/books/share/7440794a-4a7c-4930-a1e4-f06cdd6d804f)
+# 数据列配置
 
-## CONTRIBUTING
-
-代码贡献请参考 [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## CHANGELOG
-
-版本日志请参考 [CHANGELOG.md](CHANGELOG.md)
-
-## LICENSE
-
-ConsoleBarChart is [MIT licensed](https://github.com/aliyun/alibabacloud-console-chart/blob/master/LICENSE)
+| 属性 | 说明 | 类型 | 默认值 | 可选值 |
+| --- | --- | --- | --- | --- |
+| name | 数据列名称 | String | - | - |
+| data | 数据 | Array | - | - |
