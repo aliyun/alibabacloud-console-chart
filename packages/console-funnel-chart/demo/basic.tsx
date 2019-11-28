@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import Chart from '../es/index.js';
 
 const data = [
@@ -11,6 +10,6 @@ const data = [
 
 const config = {};
 
-storiesOf('ConsoleFunnelChart', module).add('基本用法', () => (
+export default () => (
   <Chart data={data} config={config} height={300} />
-));
+);
