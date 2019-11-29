@@ -1,6 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import Chart from '../es/index.js';
+import { ConsoleBarChart } from '@alicloud/console-chart';
 
 const data = [
   {
@@ -12,7 +11,7 @@ const config = {
   padding: 20,
 };
 
-class A extends React.Component {
+class Basic extends React.Component {
   state = {
     config,
   };
@@ -24,7 +23,8 @@ class A extends React.Component {
     }, 2000);
   }
   render() {
-    return <Chart data={data} config={this.state.config} height={300} />;
+    return <ConsoleBarChart data={data} config={this.state.config} height={300} />;
   }
 }
-storiesOf('ConsoleBarChart', module).add('基本用法', () => <A />);
+
+export default Basic;

@@ -3,5 +3,7 @@
 .eslintignore
 .eslintrc
 .gitignore
+.demoProjectTemplate
+site/
 lerna.json
 rollup.config.js

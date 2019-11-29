@@ -1,34 +1,70 @@
-# Console Chart
+---
+name: console-bar-chart
+zhName: 柱状图
+---
 
-> Console Chart 是阿里云云管控解决方案开发套件的一部分。旨在为用户提供一款**开箱即用、统一视觉方案**的柱状类型图表组件库。
+# 柱状图API
 
-## Install
+目前柱状图只支持单轴，不支持双轴，在配置 `yAxis`时需要注意。
 
-```bash
-npm install @alicloud/console-bar-chart --save
+# 引入方式
+
+```javascript
+import { ConsoleBarChart } from '@alicloud/console-chart';
 ```
 
-## Usage
+# 示例 Demo
 
-```js
-// 引入组件
-import ConsoleBarChart from "@alicloud/console-bar-chart";
+## 基本使用
 
-<ConsoleBarChart data={data} config={config} />;
-```
+[MDXInstruction:importDemo:basic](./demo/basic.tsx)
 
-## API 文档
+## 面积堆栈
 
-[API 文档](https://www.yuque.com/books/share/7440794a-4a7c-4930-a1e4-f06cdd6d804f)
+[MDXInstruction:importDemo:stack](./demo/stack.tsx)
 
-## CONTRIBUTING
+# 配置 Config
 
-代码贡献请参考 [CONTRIBUTING.md](CONTRIBUTING.md)
+## 通用配置
+| 属性 | 说明 |
+| --- | --- |
+| padding | 配置绘图内边距 |
+| xAxis | 配置x轴 |
+| yAxis | 配置y轴 |
+| legend | 配置图例 |
+| guide | 配置辅助元素 |
+| tooltip | 配置提示信息 |
+| label | 配置图形文本 |
+| size | 配置自定义大小 |
+| style | 配置自定义样式 |
 
-## CHANGELOG
+## 专属配置
 
-版本日志请参考 [CHANGELOG.md](CHANGELOG.md)
+### grid: Boolean
+是否显示网格线。
 
-## LICENSE
+### marginRatio: Number
+数值范围为 0 至 1，用于调整分组中各个柱子的间距。
 
-ConsoleBarChart is [MIT licensed](https://github.com/aliyun/alibabacloud-console-chart/blob/master/LICENSE)
+### dodgeStack: Boolean
+是否为分组柱状图
+
+### horizontal: Boolean
+是否水平展示柱状图。
+
+### stack: Boolean
+是否为堆叠柱状图
+
+### facet: Boolean
+是否使用镜面柱状图
+
+# 数据列配置
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| name | 数据列名称 | String | - |
+| yAxis | 坐标轴下标 | Number | 0 |
+| data | 数据 | Array | - |
+| color | 自定义当前数据列颜色 | String | 主题`color_24` |
+
+
+

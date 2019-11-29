@@ -1,6 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import Chart from '../es/index.js';
+import { ConsoleLineChart } from '@alicloud/console-chart';
 
 const data = [
   {
@@ -22,6 +21,7 @@ const config = {
     },
   },
 };
-storiesOf('ConsoleMinilineChart', module).add('基本用法', () => (
-  <Chart data={data} config={config} height={300} />
-));
+
+export default () => (
+  <ConsoleLineChart data={data} config={config} height={300} />
+);

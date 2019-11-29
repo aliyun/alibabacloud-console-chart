@@ -1,6 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import Chart from '../es/index.js';
+import { ConsoleRadarChart } from '@alicloud/console-chart';
 
 const data = [
   {
@@ -34,6 +33,7 @@ const config = {
   },
   area: true,
 };
-storiesOf('ConsoleRadarChart', module).add('面积图', () => (
-  <Chart data={data} config={config} height={300} />
-));
+
+export default () => (
+  <ConsoleRadarChart data={data} config={config} height={300} />
+);

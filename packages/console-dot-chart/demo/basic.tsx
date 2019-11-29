@@ -1,6 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import Chart from '../es/index.js';
+import { ConsoleDotChart } from '@alicloud/console-chart';
 
 const data = [
   {
@@ -14,8 +13,11 @@ const data = [
 ];
 
 const config = {
-  stack: true,
+  yAxis: {
+    min: 0,
+  },
 };
-storiesOf('ConsoleBarChart', module).add('堆叠柱状图', () => (
-  <Chart data={data} config={config} height={300} />
-));
+
+export default () => (
+  <ConsoleDotChart data={data} config={config} height={300} />
+);

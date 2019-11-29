@@ -1,6 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import Chart from '../es/index.js';
+import { ConsoleComboChart } from '@alicloud/console-chart';
 
 const data = [
   {
@@ -27,6 +26,7 @@ const config = {
     },
   ],
 };
-storiesOf('ConsoleComboChart', module).add('基本用法', () => (
-  <Chart data={data} config={config} height={300} />
-));
+
+export default () => (
+  <ConsoleComboChart data={data} config={config} height={300} />
+);
