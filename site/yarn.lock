@@ -49,10 +49,10 @@
     rc-form "^2.2.1"
     recompose "^0.26.0"
 
-"@alicloud/gatsby-theme-console-doc@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@alicloud/gatsby-theme-console-doc/-/gatsby-theme-console-doc-1.0.6.tgz#630b51889fff108d76a5c024498e35c9bfc643b3"
-  integrity sha512-vgoAOhN+HhOebjyyMCWfKh4RsoSBvLTphTAKZR9hMmCUGVNGqj1H+tq+AYeG9OOnlxQnt0/3B0Qdr7+5EZNpZw==
+"@alicloud/gatsby-theme-console-doc@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@alicloud/gatsby-theme-console-doc/-/gatsby-theme-console-doc-1.0.7.tgz#8aaa02779afacc1a5cef02c5fab91ea210c2bff3"
+  integrity sha512-nZxupXgA5YL09fcSPo7LJ+4a8406uDCDMon7c3lNWbm0ngvecpcR9qFfU8X+kA2+ZCmok3dEltte9pFcRjIq8w==
   dependencies:
     "@alicloud/console-components" "^1.0.13"
     "@alicloud/console-components-app-layout" "^1.0.2"
