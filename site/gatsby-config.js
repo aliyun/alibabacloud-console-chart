@@ -124,7 +124,7 @@ module.exports = {
         // 一些npm包（比如antv）不支持SSR，如果你的demo中用了这些包，
         // 就需要将bundleDemo设置为false
         // 默认为true
-        bundleDemo: false,
+        bundleDemo: 'async',
       }
     }
   ]

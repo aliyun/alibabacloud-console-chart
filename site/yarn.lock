@@ -36,10 +36,10 @@
     lodash "^4.17.15"
     react-sizeme "^2.6.7"
 
-"@alicloud/console-components@^1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@alicloud/console-components/-/console-components-1.0.12.tgz#121a96d74e76f98c4215484f78c1dd47b0b50774"
-  integrity sha512-no9nBVSUrz/zk7iCVZJjQuwI7PK6rZwbXllB98ZgrZiZqn5fBhCozurmTDGYjVXJCeAab3SaYdifs61bbVq3cQ==
+"@alicloud/console-components@^1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@alicloud/console-components/-/console-components-1.0.13.tgz#a17d647d59392ed16b61dd7af59c3e8ec9c1fcc0"
+  integrity sha512-0ppfv/wkDAE8CNVXS9Z0BgGFSOUAIeIMN9PbC3vWb2ocs822/4627HkO68XZsJ+35zUFQnLUkKTYnHMxhYW89A==
   dependencies:
     "@alifd/next" "~1.18.15"
     "@babel/runtime-corejs2" "^7.7.4"
@@ -49,12 +49,12 @@
     rc-form "^2.2.1"
     recompose "^0.26.0"
 
-"@alicloud/gatsby-theme-console-doc@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@alicloud/gatsby-theme-console-doc/-/gatsby-theme-console-doc-1.0.4.tgz#96ba217275cf8b75554b18ec13ad8cec8cfcb777"
-  integrity sha512-9lk6FSFbE3s6JYQajJbe+Wr36w4wHx75mpvj+jyFjDQSbHlMUaNONfKp4u8822B2PT9FcVSBd81vRc2pLyZSSA==
+"@alicloud/gatsby-theme-console-doc@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@alicloud/gatsby-theme-console-doc/-/gatsby-theme-console-doc-1.0.6.tgz#630b51889fff108d76a5c024498e35c9bfc643b3"
+  integrity sha512-vgoAOhN+HhOebjyyMCWfKh4RsoSBvLTphTAKZR9hMmCUGVNGqj1H+tq+AYeG9OOnlxQnt0/3B0Qdr7+5EZNpZw==
   dependencies:
-    "@alicloud/console-components" "^1.0.12"
+    "@alicloud/console-components" "^1.0.13"
     "@alicloud/console-components-app-layout" "^1.0.2"
     "@alicloud/console-components-console-menu" "^1.0.2"
     "@alicloud/console-components-page" "^1.0.2"
