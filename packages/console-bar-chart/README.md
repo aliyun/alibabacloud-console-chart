@@ -66,7 +66,7 @@ import { ConsoleBarChart } from '@alicloud/console-chart';
 ## 专属配置
 
 ### grid: Boolean
-是否显示网格线。
+是否显示网格线，`默认开启`。
 
 ### marginRatio: Number
 数值范围为 0 至 1，用于调整分组中各个柱子的间距。

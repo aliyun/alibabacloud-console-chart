@@ -6,6 +6,7 @@ import Horizontal from './horizontal';
 import Stack from './stack';
 import Color from './color';
 import Facet from './facet';
+import MarginRatio from './marginRatio';
 import DodgeStack from './dodgeStack';
 
 storiesOf('ConsoleBarChart', module)
@@ -14,4 +15,5 @@ storiesOf('ConsoleBarChart', module)
   .add('堆叠柱状图', () => <Stack />)
   .add('镜面柱状图', () => <Facet />)
   .add('分组柱状图', () => <DodgeStack />)
+  .add('自定义柱间距', () => <MarginRatio />)
   .add('自定义数据列颜色', () => <Color />);
