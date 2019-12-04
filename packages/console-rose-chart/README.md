@@ -11,7 +11,13 @@ zhName: 玫瑰图
 import { ConsoleRoseChart } from '@alicloud/console-chart';
 ```
 
-# Config配置
+# 示例 Demo
+
+## 基本用法
+
+[MDXInstruction:importDemo:basic](./demo/basic.tsx)
+
+# 配置 Config
 
 ## 通用配置
 
