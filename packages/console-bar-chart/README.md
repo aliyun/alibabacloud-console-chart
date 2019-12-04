@@ -27,13 +27,13 @@ import { ConsoleBarChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:stack](./demo/stack.tsx)
 
-<!-- ## 镜面柱状图
+## 镜面柱状图
 
 [MDXInstruction:importDemo:facet](./demo/facet.tsx)
 
 ## 分组柱状图
 
-[MDXInstruction:importDemo:dodgeStack](./demo/dodgeStack.tsx) -->
+[MDXInstruction:importDemo:dodgeStack](./demo/dodgeStack.tsx)
 
 ## 自定义数据列颜色
 
@@ -41,12 +41,13 @@ import { ConsoleBarChart } from '@alicloud/console-chart';
 
 
 # 数据列配置
-| 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| name | 数据列名称 | String | - |
-| yAxis | 坐标轴下标 | Number | 0 |
-| data | 数据 | Array | - |
-| color | 自定义当前数据列颜色 | String | 主题`color_24` |
+| 属性 | 说明 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- | --- |
+| name | 数据列名称 | String | - | - |
+| yAxis | 坐标轴下标 | Number | 0 | - |
+| data | 数据 | Array | - | - |
+| color | 自定义当前数据列颜色 | String | 主题`color_24` | - |
+| dodge | 分组名 | String | - | 如使用需开启`dodgeStack`配置 |
 
 # 配置 Config
 
@@ -72,7 +73,7 @@ import { ConsoleBarChart } from '@alicloud/console-chart';
 数值范围为 0 至 1，用于调整分组中各个柱子的间距。
 
 ### dodgeStack: Boolean
-是否为分组柱状图
+是否为分组柱状图。如开启该配置，需在数据列中配置`dodge`
 
 ### horizontal: Boolean
 是否水平展示柱状图。

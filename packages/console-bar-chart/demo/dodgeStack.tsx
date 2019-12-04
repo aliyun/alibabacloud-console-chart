@@ -1,16 +1,36 @@
 import React from 'react';
 import { ConsoleBarChart } from '@alicloud/console-chart';
 
-const data = [
+let data = [
   {
-    name: 'Nat网关',
-    data: [['规格', 3], ['动态数', 4], ['SDK支持语言', 4]],
+    name: 'ECS',
+    dodge: '分组1',
+    data: [],
   },
   {
-    name: 'Slb负载均衡',
-    data: [['规格', 12], ['动态数', 11], ['SDK支持语言', 0]],
+    name: 'OSS',
+    dodge: 'OSS',
+    data: [],
+  },
+  {
+    name: 'ACS',
+    dodge: 'OSS',
+    data: [],
+  },
+  {
+    name: 'RDS',
+    dodge: 'OSS',
+    data: [],
   },
 ];
+
+for (let i = 1; i < 11; i++) {
+  const name = i + '月';
+  data[0].data.push([name, Math.random() * 100 + 300]);
+  data[1].data.push([name, Math.random() * 100 + 100]);
+  data[2].data.push([name, Math.random() * 100 + 100]);
+  data[3].data.push([name, Math.random() * 100 + 100]);
+}
 
 export default () => {
   const config = {
