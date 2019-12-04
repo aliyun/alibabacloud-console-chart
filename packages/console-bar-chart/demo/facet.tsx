@@ -14,7 +14,7 @@ const data = [
 
 export default () => {
   const config = {
-    stack: true,
+    facet: true,
   };
   return (
     <ConsoleBarChart data={data} config={config} height={300} />

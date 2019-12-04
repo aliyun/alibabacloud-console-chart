@@ -19,9 +19,34 @@ import { ConsoleBarChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:basic](./demo/basic.tsx)
 
-## 面积堆栈
+## 水平柱状图
+
+[MDXInstruction:importDemo:horizontal](./demo/horizontal.tsx)
+
+## 堆叠柱状图
 
 [MDXInstruction:importDemo:stack](./demo/stack.tsx)
+
+<!-- ## 镜面柱状图
+
+[MDXInstruction:importDemo:facet](./demo/facet.tsx)
+
+## 分组柱状图
+
+[MDXInstruction:importDemo:dodgeStack](./demo/dodgeStack.tsx) -->
+
+## 自定义数据列颜色
+
+[MDXInstruction:importDemo:color](./demo/color.tsx)
+
+
+# 数据列配置
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| name | 数据列名称 | String | - |
+| yAxis | 坐标轴下标 | Number | 0 |
+| data | 数据 | Array | - |
+| color | 自定义当前数据列颜色 | String | 主题`color_24` |
 
 # 配置 Config
 
@@ -57,14 +82,3 @@ import { ConsoleBarChart } from '@alicloud/console-chart';
 
 ### facet: Boolean
 是否使用镜面柱状图
-
-# 数据列配置
-| 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| name | 数据列名称 | String | - |
-| yAxis | 坐标轴下标 | Number | 0 |
-| data | 数据 | Array | - |
-| color | 自定义当前数据列颜色 | String | 主题`color_24` |
-
-
-

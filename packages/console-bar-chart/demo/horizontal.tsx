@@ -10,6 +10,10 @@ const data = [
   },
 ];
 
+const config = {
+  horizontal: true,
+};
+
 export default () => (
-  <ConsoleBarChart data={data} height={300} />
+  <ConsoleBarChart data={data} config={config} height={300} />
 );
