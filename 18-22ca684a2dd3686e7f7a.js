@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{Mznx:function(n,t,e){"use strict";e.r(t);var a=e("q1tI"),o=e.n(a),r=e("nRmr"),c=[{name:"oss",data:[["specification",29],["feature",28],["doc",31]],color:"#E288CE"}],i={xAxis:{label:{formatter:function(n){return n+"~"}}}};t.default=function(){return o.a.createElement(r.h,{data:c,config:i,height:300})}}}]);
+//# sourceMappingURL=18-22ca684a2dd3686e7f7a.js.map
