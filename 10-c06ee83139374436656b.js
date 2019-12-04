@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{kSvi:function(n,a,t){"use strict";t.r(a);var e=t("q1tI"),i=t.n(e),c=t("nRmr"),o=[{name:"北大",data:[["语文",20],["高数",10],["商务英语",15]]},{name:"清华",data:[["语文",18],["高数",20],["商务英语",16]]}],r={yAxis:{min:0}};a.default=function(){return i.a.createElement(c.c,{data:o,config:r,height:300})}}}]);
-//# sourceMappingURL=10-c06ee83139374436656b.js.map
