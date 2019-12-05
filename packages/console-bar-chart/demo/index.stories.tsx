@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Basic from './basic';
-import Horizontal from './horizontal';
-import Stack from './stack';
-import Color from './color';
-import Facet from './facet';
-import DodgeStack from './dodgeStack';
+import Basic from './Basic';
+import Horizontal from './Horizontal';
+import Stack from './Stack';
+import Color from './Color';
+import Facet from './Facet';
+import DodgeStack from './DodgeStack';
 
 storiesOf('ConsoleBarChart', module)
   .add('基本用法', () => <Basic />)

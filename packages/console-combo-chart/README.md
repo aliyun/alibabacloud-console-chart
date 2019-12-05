@@ -13,7 +13,7 @@ import { ConsoleComboChart } from '@alicloud/console-chart';
 # 示例 Demo
 
 ## 基本使用
-[MDXInstruction:importDemo:basic](./demo/basic.tsx)
+[MDXInstruction:importDemo:basic](./demo/Basic.tsx)
 
 # 配置 Config
 

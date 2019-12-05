@@ -17,27 +17,27 @@ import { ConsoleBarChart } from '@alicloud/console-chart';
 
 ## 基本使用
 
-[MDXInstruction:importDemo:basic](./demo/basic.tsx)
+[MDXInstruction:importDemo:basic](./demo/Basic.tsx)
 
 ## 水平柱状图
 
-[MDXInstruction:importDemo:horizontal](./demo/horizontal.tsx)
+[MDXInstruction:importDemo:horizontal](./demo/Horizontal.tsx)
 
 ## 堆叠柱状图
 
-[MDXInstruction:importDemo:stack](./demo/stack.tsx)
+[MDXInstruction:importDemo:stack](./demo/Stack.tsx)
 
 ## 镜面柱状图
 
-[MDXInstruction:importDemo:facet](./demo/facet.tsx)
+[MDXInstruction:importDemo:facet](./demo/Facet.tsx)
 
 ## 分组柱状图
 
-[MDXInstruction:importDemo:dodgeStack](./demo/dodgeStack.tsx)
+[MDXInstruction:importDemo:dodgeStack](./demo/DodgeStack.tsx)
 
 ## 自定义数据列颜色
 
-[MDXInstruction:importDemo:color](./demo/color.tsx)
+[MDXInstruction:importDemo:color](./demo/Color.tsx)
 
 
 # 数据列配置
