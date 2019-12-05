@@ -19,7 +19,7 @@ import { ConsoleLineChart } from "@alicloud/console-chart";
 
 ## API 文档
 
-[API 文档](https://www.yuque.com/books/share/7440794a-4a7c-4930-a1e4-f06cdd6d804f)
+[API 文档](https://aliyun.github.io/alibabacloud-console-chart/guides/quick-start)
 
 ## CONTRIBUTING
 

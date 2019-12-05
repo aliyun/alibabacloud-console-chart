@@ -46,6 +46,15 @@ yarn watch
 
 ### 文档编写
 
+进入项目根目录，执行以下命令即可预览文档网站：
+```bash
+yarn site:dev
+```
+
+将编写好的文档推动到Github Pages上：
+```bash
+yarn site:push
+```
 
 ### 发包
 
@@ -54,7 +63,6 @@ yarn watch
 ```bash
 lerna publish
 ```
-
 
 ## 代码仓库组织结构
 
