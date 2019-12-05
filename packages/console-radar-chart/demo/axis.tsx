@@ -13,7 +13,6 @@ const config = {
   xAxis: {
     label: {
       htmlTemplate: (val, item, index) => {
-        console.log(val, item, index);
         return `
           <div>
             <div style="text-align: center;">${val}</div>
