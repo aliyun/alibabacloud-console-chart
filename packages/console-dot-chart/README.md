@@ -14,16 +14,16 @@ import { ConsoleDotChart } from '@alicloud/console-chart';
 # 示例 Demo
 
 ## 基本散点图
-[MDXInstruction:importDemo:basic](./demo/Basic.tsx)
+[MDXInstruction:importDemo:Basic](./demo/Basic.tsx)
 
 ## 多组数据
-[MDXInstruction:importDemo:basic](./demo/Multi.tsx)
+[MDXInstruction:importDemo:Multi](./demo/Multi.tsx)
 
 ## 自定义点大小
-[MDXInstruction:importDemo:basic](./demo/Size.tsx)
+[MDXInstruction:importDemo:Size](./demo/Size.tsx)
 
 ## 扰动图
-[MDXInstruction:importDemo:basic](./demo/Disturbance.tsx)
+[MDXInstruction:importDemo:Disturbance](./demo/Disturbance.tsx)
 
 # 配置 Config
 
