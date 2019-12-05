@@ -3,5 +3,5 @@ import { storiesOf } from '@storybook/react';
 
 import Basic from './basic';
 
-storiesOf('ConsoleDotChart', module)
+storiesOf('ConsoleRoseChart', module)
   .add('基本用法', () => <Basic />);

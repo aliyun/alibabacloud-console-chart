@@ -12,10 +12,34 @@ import { ConsoleComboChart } from '@alicloud/console-chart';
 
 # 示例 Demo
 
-## 基本使用
-[MDXInstruction:importDemo:basic](./demo/basic.tsx)
+## 基础混合图
+[MDXInstruction:importDemo:basic](./demo/Basic.tsx)
+
+## 纵坐标设置颜色
+[MDXInstruction:importDemo:basic](./demo/YAxisColor.tsx)
+
+## 单个纵坐标
+[MDXInstruction:importDemo:basic](./demo/SingleYAxis.tsx)
+
+## 光滑曲线
+[MDXInstruction:importDemo:basic](./demo/Smooth.tsx)
+
+## 堆叠图
+[MDXInstruction:importDemo:basic](./demo/Stack.tsx)
+
+## 自定义颜色
+[MDXInstruction:importDemo:basic](./demo/Color.tsx)
 
 # 配置 Config
+
+# 数据列配置
+| 属性 | 说明 | 类型 | 默认值 | 可选值 |
+| --- | --- | --- | --- | --- |
+| name | 数据列名称 | String | - | - |
+| type | 类型 | String | - | ['bar', 'line'] |
+| yAxis | 坐标轴下标 | Number | 0 | [0,1] |
+| data | 数据 | - | - | - |
+| color | 自定义当前数据列颜色 | String | 主题`color_24` | - |
 
 ## 通用配置
 
@@ -65,12 +89,3 @@ Y 轴是否开启坐标轴颜色
 
 ### barLabel
 单独配置柱状图的 `label`, 配置方法和通用`label`一致
-
-# 数据列配置
-| 属性 | 说明 | 类型 | 默认值 | 可选值 |
-| --- | --- | --- | --- | --- |
-| name | 数据列名称 | String | - | - |
-| type | 类型 | String | - | ['bar', 'line'] |
-| yAxis | 坐标轴下标 | Number | 0 | [0,1] |
-| data | 数据 | - | - | - |
-| color | 自定义当前数据列颜色 | String | 主题`color_24` | - |

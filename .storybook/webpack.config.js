@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = ({ config }) => {
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
@@ -12,8 +14,8 @@ module.exports = ({ config }) => {
     ],
   });
   config.resolve.extensions.push('.ts', '.tsx');
-  config.resolve.alias = {
-    '@alicloud': path.resolve(__dirname, 'packages/'),
-  };
+  // config.resolve.alias = {
+  //   '@alicloud/console-chart': path.resolve(__dirname, '../packages/console-chart/es'),
+  // };
   return config;
 };

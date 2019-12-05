@@ -74,7 +74,11 @@ module.exports = {
         // 顶部导航
         topNav: [
           { text: "指南", href: "/guides/quick-start" },
-          { text: "组件文档", href: "/components/console-bar-chart" }
+          { text: "组件文档", href: "/components/console-bar-chart" },
+          {
+            text: 'Github',
+            href: 'https://github.com/aliyun/alibabacloud-console-chart',
+          },
         ],
         // 左侧导航
         // 左侧导航与顶部导航的区别：
@@ -124,7 +128,7 @@ module.exports = {
         // 一些npm包（比如antv）不支持SSR，如果你的demo中用了这些包，
         // 就需要将bundleDemo设置为false
         // 默认为true
-        bundleDemo: false,
+        bundleDemo: 'async',
       }
     }
   ]

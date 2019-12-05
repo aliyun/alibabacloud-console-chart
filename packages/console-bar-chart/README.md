@@ -17,11 +17,37 @@ import { ConsoleBarChart } from '@alicloud/console-chart';
 
 ## 基本使用
 
-[MDXInstruction:importDemo:basic](./demo/basic.tsx)
+[MDXInstruction:importDemo:basic](./demo/Basic.tsx)
 
-## 面积堆栈
+## 水平柱状图
 
-[MDXInstruction:importDemo:stack](./demo/stack.tsx)
+[MDXInstruction:importDemo:horizontal](./demo/Horizontal.tsx)
+
+## 堆叠柱状图
+
+[MDXInstruction:importDemo:stack](./demo/Stack.tsx)
+
+## 镜面柱状图
+
+[MDXInstruction:importDemo:facet](./demo/Facet.tsx)
+
+## 分组柱状图
+
+[MDXInstruction:importDemo:dodgeStack](./demo/DodgeStack.tsx)
+
+## 自定义数据列颜色
+
+[MDXInstruction:importDemo:color](./demo/Color.tsx)
+
+
+# 数据列配置
+| 属性 | 说明 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- | --- |
+| name | 数据列名称 | String | - | - |
+| yAxis | 坐标轴下标 | Number | 0 | - |
+| data | 数据 | Array | - | - |
+| color | 自定义当前数据列颜色 | String | 主题`color_24` | - |
+| dodge | 分组名 | String | - | 如使用需开启`dodgeStack`配置 |
 
 # 配置 Config
 
@@ -41,13 +67,13 @@ import { ConsoleBarChart } from '@alicloud/console-chart';
 ## 专属配置
 
 ### grid: Boolean
-是否显示网格线。
+是否显示网格线，`默认开启`。
 
 ### marginRatio: Number
 数值范围为 0 至 1，用于调整分组中各个柱子的间距。
 
 ### dodgeStack: Boolean
-是否为分组柱状图
+是否为分组柱状图。如开启该配置，需在数据列中配置`dodge`
 
 ### horizontal: Boolean
 是否水平展示柱状图。
@@ -57,14 +83,3 @@ import { ConsoleBarChart } from '@alicloud/console-chart';
 
 ### facet: Boolean
 是否使用镜面柱状图
-
-# 数据列配置
-| 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| name | 数据列名称 | String | - |
-| yAxis | 坐标轴下标 | Number | 0 |
-| data | 数据 | Array | - |
-| color | 自定义当前数据列颜色 | String | 主题`color_24` |
-
-
-
