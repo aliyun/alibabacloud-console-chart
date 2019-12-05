@@ -13,11 +13,48 @@ import { ConsoleLineChart } from '@alicloud/console-chart';
 
 # 示例 Demo
 
-## 基本使用
+## 基本折线图
 
-[MDXInstruction:importDemo:basic](./demo/basic.tsx)
+[MDXInstruction:importDemo:Basic](./demo/Basic.tsx)
+
+## 多组数据
+
+[MDXInstruction:importDemo:Multi](./demo/Multi.tsx)
+
+## 自定义X轴label
+
+[MDXInstruction:importDemo:XLabel](./demo/XLabel.tsx)
+
+## 设置双轴
+
+[MDXInstruction:importDemo:DoubleAxis](./demo/DoubleAxis.tsx)
+
+## 配置顶部单位
+
+[MDXInstruction:importDemo:Unit](./demo/Unit.tsx)
+
+## 设置光滑曲线
+
+[MDXInstruction:importDemo:Smooth](./demo/Smooth.tsx)
+
+## 线条带点
+
+[MDXInstruction:importDemo:Dot](./demo/Dot.tsx)
+
+## 面积堆栈图
+
+[MDXInstruction:importDemo:Stack](./demo/Stack.tsx)
 
 # Config 配置
+
+# 数据列配置
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| name | 数据列名称 | String | - |
+| yAxis | 坐标轴下标 | Number | 0 |
+| data | 数据 | Array | - |
+| color | 自定义当前数据列颜色 | String | 主题`color_24` |
 
 ## 通用配置
 | 属性 | 说明 |
@@ -57,12 +94,3 @@ import { ConsoleLineChart } from '@alicloud/console-chart';
 
 ### yAxisColor: Boolean
 是否开启坐标轴颜色。
-
-# 数据列配置
-
-| 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| name | 数据列名称 | String | - |
-| yAxis | 坐标轴下标 | Number | 0 |
-| data | 数据 | Array | - |
-| color | 自定义当前数据列颜色 | String | 主题`color_24` |
