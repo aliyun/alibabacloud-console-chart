@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Basic from './basic';
-import Area from './area';
-import Multi from './multi';
-import Axis from './axis';
+import Basic from './Basic';
+import Area from './Area';
+import Multi from './Multi';
+import Axis from './Axis';
 
 storiesOf('ConsoleRadarChart', module)
   .add('基本用法', () => <Basic />)
