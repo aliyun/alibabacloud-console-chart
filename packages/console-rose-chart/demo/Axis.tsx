@@ -17,6 +17,13 @@ const data = [
   },
 ];
 
+const config = {
+  axis: true,
+  label: false,
+  padding: [50, 50, 50, 50],
+  legend: false,
+};
+
 export default () => (
-  <ConsoleRoseChart data={data} height={300} />
+  <ConsoleRoseChart data={data} config={config} height={300} />
 );

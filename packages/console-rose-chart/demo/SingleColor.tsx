@@ -17,6 +17,10 @@ const data = [
   },
 ];
 
+const config = {
+  colors: '#0093ee',
+};
+
 export default () => (
-  <ConsoleRoseChart data={data} height={300} />
+  <ConsoleRoseChart data={data} config={config} height={300} />
 );

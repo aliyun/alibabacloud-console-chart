@@ -15,9 +15,24 @@ import { ConsoleRoseChart } from '@alicloud/console-chart';
 
 ## 基本用法
 
-[MDXInstruction:importDemo:basic](./demo/basic.tsx)
+[MDXInstruction:importDemo:Basic](./demo/Basic.tsx)
+
+## 带坐标轴
+
+[MDXInstruction:importDemo:Axis](./demo/Axis.tsx)
+
+## 单色玫瑰图
+
+[MDXInstruction:importDemo:SingleColor](./demo/SingleColor.tsx)
 
 # 配置 Config
+
+# 数据列配置
+
+| 属性 | 说明 | 类型 | 默认值 | 可选值 |
+| --- | --- | --- | --- | --- |
+| name | 数据列名称 | String | - | - |
+| data | 数据 | Array | - | - |
 
 ## 通用配置
 
@@ -34,10 +49,3 @@ import { ConsoleRoseChart } from '@alicloud/console-chart';
 | style | 配置自定义样式 |
 
 ## 专属配置
-
-# 数据列配置
-
-| 属性 | 说明 | 类型 | 默认值 | 可选值 |
-| --- | --- | --- | --- | --- |
-| name | 数据列名称 | String | - | - |
-| data | 数据 | Array | - | - |
