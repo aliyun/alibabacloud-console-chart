@@ -36,6 +36,7 @@ const data = [
   },
 ];
 
+
 const config = {
   padding: [40, 52, 44, 44],
   xAxis: {
