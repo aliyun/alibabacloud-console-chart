@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[27],{Cho7:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),i=t.n(a),o=t("nRmr"),c=[{name:"清华",data:[["Chinese",20],["English",10],["Math",15]]}],h={};e.default=function(){return i.a.createElement(o.g,{data:c,config:h,height:300})}}}]);
+//# sourceMappingURL=27-0351cf6622be86d1ea9e.js.map
