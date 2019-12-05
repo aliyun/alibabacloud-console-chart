@@ -15,9 +15,33 @@ import { ConsoleMinilineChart } from '@alicloud/console-chart';
 
 ## 基本使用
 
-[MDXInstruction:importDemo:basic](./demo/basic.tsx)
+[MDXInstruction:importDemo:Basic](./demo/Basic.tsx)
+
+## 面积图
+
+[MDXInstruction:importDemo:Area](./demo/Area.tsx)
+
+## 光滑面积图
+
+[MDXInstruction:importDemo:AreaSmooth](./demo/AreaSmooth.tsx)
+
+## 面积堆栈图
+
+[MDXInstruction:importDemo:AreaStack](./demo/AreaStack.tsx)
+
+## 自定义颜色
+
+[MDXInstruction:importDemo:Color](./demo/Color.tsx)
 
 # 配置 Config
+
+# 数据列配置
+
+| 属性 | 说明 | 类型 | 默认值 | 可选值 |
+| --- | --- | --- | --- | --- |
+| name | 数据列名称 | String | - | - |
+| data | 数据 | - | - | - |
+| color | 自定义当前数据列颜色 | String | 主题`color_24` | - |
 
 ## 通用配置
 
@@ -46,12 +70,3 @@ import { ConsoleMinilineChart } from '@alicloud/console-chart';
 
 ### symbol: Boolean
 是否展示数据点
-
-# 数据列配置
-
-| 属性 | 说明 | 类型 | 默认值 | 可选值 |
-| --- | --- | --- | --- | --- |
-| name | 数据列名称 | String | - | - |
-| data | 数据 | - | - | - |
-| color | 自定义当前数据列颜色 | String | 主题`color_24` | - |
-
