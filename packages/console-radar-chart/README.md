@@ -15,19 +15,19 @@ import { ConsoleRadarChart } from '@alicloud/console-chart';
 
 ## 基本使用
 
-[MDXInstruction:importDemo:basic](./demo/basic.tsx)
+[MDXInstruction:importDemo:Basic](./demo/Basic.tsx)
 
 ## 面积图
 
-[MDXInstruction:importDemo:area](./demo/area.tsx)
+[MDXInstruction:importDemo:Area](./demo/Area.tsx)
 
 ## 多组数据
 
-[MDXInstruction:importDemo:multi](./demo/multi.tsx)
+[MDXInstruction:importDemo:Multi](./demo/Multi.tsx)
 
 ## 自定义坐标轴
 
-[MDXInstruction:importDemo:axis](./demo/axis.tsx)
+[MDXInstruction:importDemo:Axis](./demo/Axis.tsx)
 
 # 配置 Config
 

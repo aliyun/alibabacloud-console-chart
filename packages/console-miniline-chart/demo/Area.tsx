@@ -8,7 +8,9 @@ const data = [
   },
 ];
 
-const config = {};
+const config = {
+  area: true,
+};
 
 export default () => (
   <ConsoleMinilineChart data={data} config={config} height={300} />

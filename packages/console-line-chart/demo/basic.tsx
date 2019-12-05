@@ -8,19 +8,7 @@ const data = [
   },
 ];
 
-const config = {
-  area: true,
-  symbol: true,
-  symbolStyle: {
-    fill: '#ffffff',
-    stroke: '#fff',
-  },
-  tooltip: {
-    crosshairs: {
-      type: 'cross',
-    },
-  },
-};
+const config = {};
 
 export default () => (
   <ConsoleLineChart data={data} config={config} height={300} />

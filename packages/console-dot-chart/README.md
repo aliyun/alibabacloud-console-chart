@@ -13,10 +13,26 @@ import { ConsoleDotChart } from '@alicloud/console-chart';
 
 # 示例 Demo
 
-## 基本使用
-[MDXInstruction:importDemo:basic](./demo/basic.tsx)
+## 基本散点图
+[MDXInstruction:importDemo:Basic](./demo/Basic.tsx)
+
+## 多组数据
+[MDXInstruction:importDemo:Multi](./demo/Multi.tsx)
+
+## 自定义点大小
+[MDXInstruction:importDemo:Size](./demo/Size.tsx)
+
+## 扰动图
+[MDXInstruction:importDemo:Disturbance](./demo/Disturbance.tsx)
 
 # 配置 Config
+
+# 数据列配置
+| 属性 | 说明 | 类型 | 默认值 | 可选值 |
+| --- | --- | --- | --- | --- |
+| name | 数据列名称 | String | - | - |
+| data | 数据 | - | - | - |
+| color | 自定义当前数据列颜色 | String | 主题`color_24` | - |
 
 ## 通用配置
 
@@ -36,10 +52,3 @@ import { ConsoleDotChart } from '@alicloud/console-chart';
 
 ### jitter: Boolean
 是否展示成扰动图
-
-# 数据列配置
-| 属性 | 说明 | 类型 | 默认值 | 可选值 |
-| --- | --- | --- | --- | --- |
-| name | 数据列名称 | String | - | - |
-| data | 数据 | - | - | - |
-| color | 自定义当前数据列颜色 | String | 主题`color_24` | - |

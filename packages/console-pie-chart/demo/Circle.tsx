@@ -3,12 +3,17 @@ import { ConsolePieChart } from '@alicloud/console-chart';
 
 const data = [
   {
-    name: '各类云产品占比',
-    data: [['计算类', 45], ['资源类', 26], ['服务类', 12], ['工具类', 8]],
+    name: '时长',
+    data: [['1年', 45], ['2年', 26], ['3年', 12], ['4年', 8], ['5年', 10], ['6年以上', 27]],
   },
 ];
 
-const config = {};
+let config = {
+  cycle: true,
+  legend: {
+    position: 'bottom',
+  },
+};
 
 export default () => (
   <ConsolePieChart data={data} config={config} height={300} />

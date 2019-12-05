@@ -3,20 +3,21 @@ import { ConsoleDotChart } from '@alicloud/console-chart';
 
 const data = [
   {
-    name: '北大',
-    data: [['语文', 20], ['高数', 10], ['商务英语', 15]],
-  },
-  {
-    name: '清华',
-    data: [['语文', 18], ['高数', 20], ['商务英语', 16]],
+    name: '云产品数据',
+    data: [
+      ['a', 1892],
+      ['b', 7292],
+      ['c', 5714],
+      ['d', 5354],
+      ['e', 2014],
+      ['f', 22],
+      ['g', 1123],
+      ['h', 5218],
+    ],
   },
 ];
 
-const config = {
-  yAxis: {
-    min: 0,
-  },
-};
+const config = {};
 
 export default () => (
   <ConsoleDotChart data={data} config={config} height={300} />

@@ -13,22 +13,22 @@ import { ConsoleComboChart } from '@alicloud/console-chart';
 # 示例 Demo
 
 ## 基础混合图
-[MDXInstruction:importDemo:basic](./demo/Basic.tsx)
+[MDXInstruction:importDemo:Basic](./demo/Basic.tsx)
 
 ## 纵坐标设置颜色
-[MDXInstruction:importDemo:basic](./demo/YAxisColor.tsx)
+[MDXInstruction:importDemo:YAxisColor](./demo/YAxisColor.tsx)
 
 ## 单个纵坐标
-[MDXInstruction:importDemo:basic](./demo/SingleYAxis.tsx)
+[MDXInstruction:importDemo:SingleYAxis](./demo/SingleYAxis.tsx)
 
 ## 光滑曲线
-[MDXInstruction:importDemo:basic](./demo/Smooth.tsx)
+[MDXInstruction:importDemo:Smooth](./demo/Smooth.tsx)
 
 ## 堆叠图
-[MDXInstruction:importDemo:basic](./demo/Stack.tsx)
+[MDXInstruction:importDemo:Stack](./demo/Stack.tsx)
 
 ## 自定义颜色
-[MDXInstruction:importDemo:basic](./demo/Color.tsx)
+[MDXInstruction:importDemo:Color](./demo/Color.tsx)
 
 # 配置 Config
 
