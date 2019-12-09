@@ -1,0 +1,32 @@
+{
+  "name": "@alicloud/console-tree-graph",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "lib",
+    "es",
+    "dist"
+  ],
+  "scripts": {
+    "clean-rpt": "rm -rf .rpt2_cache",
+    "clean": "rm -rf lib es dist",
+    "build": "npm run clean && rollup -c ",
+    "prepare": "npm run build",
+    "watch": "rollup -c -w",
+    "lint": "tslint --project ."
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/aliyun/alibabacloud-console-chart/tree/master/packages/console-tree-graph",
+  "license": "MIT",
+  "dependencies": {
+    "@antv/g6": "^3.2.4",
+    "tslib": "^1.10.0"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0"
+  },
+  "gitHead": "c79b139c3484d9590cfe3e43b106c5e718bf2ff9"
+}
