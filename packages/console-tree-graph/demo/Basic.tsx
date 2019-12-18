@@ -1,12 +1,11 @@
 import React from 'react';
-import ConsoleTreeGraph from '@alicloud/console-tree-graph';
+// import ConsoleTreeGraph from '@alicloud/console-tree-graph';
+import ConsoleTreeGraph from '../src';
 
 export default () => {
-  const height = window.innerHeight - 200;
-  const width = window.innerWidth - 200;
   const config = {
-    height,
-    width,
+    height: 800,
+    width: 600,
     fitView: true,
   };
   return (

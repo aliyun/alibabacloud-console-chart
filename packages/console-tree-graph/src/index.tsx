@@ -14,6 +14,9 @@ interface options {
   height?: number,
   style?: object,
   fitView?: boolean,
+  dragCanvas?: boolean,
+  zoomCanvas?: boolean,
+  nodeExpand?: boolean,
 }
 
 class ConsoleTreeGraph extends React.Component<Props, null> {
@@ -25,22 +28,25 @@ class ConsoleTreeGraph extends React.Component<Props, null> {
   }
 
   init = () => {
-    const { config: { width = 800, height = 600, ...options }, data } = this.props;
+    const { config = {} as options, data } = this.props;
+    const {
+      width = 800,
+      height = 600,
+      fitView = false,
+      dragCanvas = false,
+      zoomCanvas = false,
+      nodeExpand = false,
+      ...others
+    } = config;
     if (this.ref && this.ref.current) {
       this.graph = new TreeGraph({
         container: this.ref.current as HTMLElement,
         width,
         height,
-        ...options,
+        ...others,
+        fitView,
         modes: {
-          default: [{
-            type: 'collapse-expand',
-            onChange: function onChange(item, collapsed) {
-              const data = item.get('model').data;
-              data.collapsed = collapsed;
-              return true;
-            }
-          }, 'drag-canvas', 'zoom-canvas' ]
+          default: [],
         },
         defaultNode: {
           size: 26,
@@ -78,6 +84,42 @@ class ConsoleTreeGraph extends React.Component<Props, null> {
       });
       this.graph.data(data);
       this.graph.render();
+    }
+  }
+
+  updateConfig = () => {
+    const {
+      fitView = false,
+      dragCanvas = false,
+      zoomCanvas = false,
+      nodeExpand = false,
+    } = this.props.config;
+    if (!this.graph) return;
+    this.graph.set('fitView', fitView);
+
+    if (dragCanvas) {
+      this.graph.addBehaviors(['drag-canvas']);
+    } else {
+      this.graph.removeBehaviors(['drag-canvas']);
+    }
+    if (zoomCanvas) {
+      this.graph.addBehaviors(['zoom-canvas']);
+    } else {
+      this.graph.removeBehaviors(['zoom-canvas']);
+    }
+    if (nodeExpand) {
+      this.graph.addBehaviors([
+        {
+          type: 'collapse-expand',
+          onChange: function onChange(item, collapsed) {
+            const data = item.get('model').data;
+            data.collapsed = collapsed;
+            return true;
+          }
+        }
+      ]);
+    } else {
+      this.graph.removeBehaviors(['collapse-expand']);
     }
   }
 
