@@ -6,10 +6,14 @@ const { TreeGraph } = G6;
 
 interface Props {
   data: object,
+  config?: options,
+}
+
+interface options {
   width?: number,
   height?: number,
-  config?: object,
   style?: object,
+  fitView?: boolean,
 }
 
 class ConsoleTreeGraph extends React.Component<Props, null> {
@@ -21,12 +25,13 @@ class ConsoleTreeGraph extends React.Component<Props, null> {
   }
 
   init = () => {
-    const { width = 800, height = 600, data } = this.props;
+    const { config: { width = 800, height = 600, ...options }, data } = this.props;
     if (this.ref && this.ref.current) {
       this.graph = new TreeGraph({
         container: this.ref.current as HTMLElement,
         width,
         height,
+        ...options,
         modes: {
           default: [{
             type: 'collapse-expand',
@@ -77,7 +82,7 @@ class ConsoleTreeGraph extends React.Component<Props, null> {
   }
 
   render() {
-    const { style } = this.props;
+    const { style } = this.props.config;
     return <div ref={this.ref} style={style} />;
   }
 }
