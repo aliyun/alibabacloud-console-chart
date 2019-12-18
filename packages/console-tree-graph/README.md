@@ -1,6 +1,6 @@
 ---
 name: console-tree-graph
-zhName: 雷达图
+zhName: 树图
 ---
 
 # 雷达图API

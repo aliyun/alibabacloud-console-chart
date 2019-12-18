@@ -1,17 +1,30 @@
 import * as React from 'react';
 import * as G6 from '@antv/g6';
 
-const { useEffect, useRef } = React;
+const { createRef } = React;
 const { TreeGraph } = G6;
 
-export default function({ data, height = 500, width = 800, config = {}, style={} }) {
-  const ref = useRef(null);
-  let graph = null;
+interface Props {
+  data: object,
+  width?: number,
+  height?: number,
+  config?: object,
+  style?: object,
+}
 
-  useEffect(() => {
-    if (ref && ref.current) {
-      graph = new TreeGraph({
-        container: ref.current,
+class ConsoleTreeGraph extends React.Component<Props, null> {
+  graph = null
+  ref = createRef() as React.RefObject<HTMLDivElement>
+
+  componentDidMount() {
+    this.init();
+  }
+
+  init = () => {
+    const { width = 800, height = 600, data } = this.props;
+    if (this.ref && this.ref.current) {
+      this.graph = new TreeGraph({
+        container: this.ref.current as HTMLElement,
         width,
         height,
         modes: {
@@ -58,10 +71,15 @@ export default function({ data, height = 500, width = 800, config = {}, style={}
           }
         }
       });
+      this.graph.data(data);
+      this.graph.render();
     }
-    graph.data(data);
-    graph.render();
-  }, []);
+  }
 
-  return <div ref={ref} style={style} />;
-};
+  render() {
+    const { style } = this.props;
+    return <div ref={this.ref} style={style} />;
+  }
+}
+
+export default ConsoleTreeGraph;
