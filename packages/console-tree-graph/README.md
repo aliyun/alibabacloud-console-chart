@@ -1,15 +1,17 @@
 ---
 name: console-tree-graph
-zhName: 树图
+zhName: 基本树图
 ---
 
-# 雷达图API
+# 树图API
 
 # 引入方式
 
 ```javascript
-import { ConsoleRadarChart } from '@alicloud/console-chart';
+import ConsoleTreeGraph from '@alicloud/console-tree-graph';
 ```
+
+注意，目前为了减少打包之后的体积大小，暂不将Graph相关的加入`console-chart`包内，所以只能通过单包引入的方式使用。
 
 # 示例 Demo
 
@@ -17,54 +19,40 @@ import { ConsoleRadarChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:Basic](./demo/Basic.tsx)
 
-## 面积图
-
-[MDXInstruction:importDemo:Area](./demo/Area.tsx)
-
-## 多组数据
-
-[MDXInstruction:importDemo:Multi](./demo/Multi.tsx)
-
-## 自定义坐标轴
-
-[MDXInstruction:importDemo:Axis](./demo/Axis.tsx)
-
 # 配置 Config
-
-## 通用配置
-| 属性 | 说明 |
-| --- | --- |
-| padding | 配置绘图内边距 |
-| xAxis | 配置x轴 |
-| yAxis | 配置y轴 |
-| legend | 配置图例 |
-| guide | 配置辅助元素 |
-| tooltip | 配置提示信息 |
-| label | 配置图形文本 |
-| size | 配置自定义大小 |
-| style | 配置自定义样式 |
-
-## 专属配置
-
-### symbol: Boolean
-是否展示数据点
-
-### smooth: Boolean
-显示成光滑曲线
-
-### area: Boolean
-是否显示面积雷达图
-
-### stack: Boolean
-是否显示堆栈图, 仅在`area=true`时生效
-
-### radius: Number
-设置极坐标系的半径，可控制显示图形的大小
 
 ## 数据列配置
 
 | 属性 | 说明 | 类型 | 默认值 | 可选值 |
 | --- | --- | --- | --- | --- |
 | name | 数据列名称 | String | - | - |
-| data | 数据 | - | - | - |
-| color | 自定义当前数据列颜色 | String | 主题`color_24` | - |
+| data | 数据 | Object | - | - |
+
+注意：与普通图表不同的是，树图的数据结构为一个`JSON对象`，通过`children`属性来关联子级节点。
+
+最简单的一个数据例子：
+```json
+{
+  id: '01',
+  children: [
+    {
+      id: '011',
+      children: []
+    },
+    {
+      id: '012',
+      children: [
+        {
+          id: '0121',
+        }
+      ]
+    }
+  ]
+}
+```
+
+## 专属配置
+
+### fitView: Boolean
+是否自适应画布
+
