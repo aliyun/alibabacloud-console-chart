@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{"8R1f":function(n,t,a){"use strict";a.r(t);var e=a("q1tI"),c=a.n(e),i=a("nRmr"),o=[{name:"各类云产品占比",data:[["计算类",45],["资源类",26],["服务类",12],["工具类",8]]}],r={};t.default=function(){return c.a.createElement(i.g,{data:o,config:r,height:300})}}}]);
+//# sourceMappingURL=13-b0058d5e6b560f5b3348.js.map
