@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[52],{WnK0:function(t,n,e){"use strict";e.r(n);var a=e("q1tI"),r=e.n(a),o=e("nRmr"),i=[{name:"等级",data:[["11",55],["12",26.8],["13",112.8],["14",81.5],["15",61.2],["16",7],["17",12]]}],u={tooltip:{nameFormatter:function(t){return"name: "+t},valueFormatter:function(t,n){return"value: "+parseFloat(String(100*n.percent)).toFixed(0)+"%"}}};n.default=function(){return r.a.createElement(o.g,{data:i,config:u,height:300})}}}]);
-//# sourceMappingURL=52-4224006bd91f84a26cb7.js.map
