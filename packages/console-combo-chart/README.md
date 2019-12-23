@@ -30,6 +30,9 @@ import { ConsoleComboChart } from '@alicloud/console-chart';
 ## 自定义颜色
 [MDXInstruction:importDemo:Color](./demo/Color.tsx)
 
+## 点击事件
+[MDXInstruction:importDemo:Click](./demo/Click.tsx)
+
 # 配置 Config
 
 # 数据列配置
