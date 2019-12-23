@@ -1,6 +1,6 @@
 import React from 'react';
-// import ConsoleTreeGraph from '@alicloud/console-tree-graph';
-import ConsoleTreeGraph from '../src';
+import ConsoleTreeGraph from '@alicloud/console-tree-graph';
+// import ConsoleTreeGraph from '../src';
 
 export default () => {
   const config = {
