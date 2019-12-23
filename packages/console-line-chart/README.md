@@ -25,6 +25,10 @@ import { ConsoleLineChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:XLabel](./demo/XLabel.tsx)
 
+## 自定义X轴label
+
+[MDXInstruction:importDemo:XAxisTickInterval](./demo/XAxisTickInterval.tsx)
+
 ## 设置双轴
 
 [MDXInstruction:importDemo:DoubleAxis](./demo/DoubleAxis.tsx)
