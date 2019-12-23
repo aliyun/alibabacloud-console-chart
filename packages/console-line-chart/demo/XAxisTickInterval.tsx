@@ -50,6 +50,7 @@ const config = {
   xAxis: {
     type: 'time',
     mask: 'YYYY-MM-DD',
+    tickInterval: 1525104000000 - 1522512000000, // 1个月的时间戳差值，这里只能传入时间戳
   },
   yAxis: {
     labelFormatter: val => (val > 10000 ? parseInt(String(val / 10000)) + 'W' : val),

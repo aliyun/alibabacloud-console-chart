@@ -23,7 +23,8 @@
     "checkJs": false,
     "resolveJsonModule": true,
     "noStrictGenericChecks": true,
-    "noImplicitUseStrict": true
+    "noImplicitUseStrict": true,
+    "downlevelIteration": true,
   },
   "exclude": ["node_modules"]
 }
