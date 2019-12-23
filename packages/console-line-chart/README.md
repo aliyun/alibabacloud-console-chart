@@ -25,7 +25,9 @@ import { ConsoleLineChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:XLabel](./demo/XLabel.tsx)
 
-## 自定义X轴label
+## 自定义x轴时间刻度间距
+
+通过传入`tickInterval`字段，来配置坐标轴上每个刻度之间的差值大小。注意：如果是`type`设置为`time`的话，`tickInterval`字段的值必须是时间戳（毫秒）。
 
 [MDXInstruction:importDemo:XAxisTickInterval](./demo/XAxisTickInterval.tsx)
 
