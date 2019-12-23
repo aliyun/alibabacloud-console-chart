@@ -35,11 +35,16 @@ export default () => {
 
   const [hasClick, setClick] = useState(false);
 
-  // 不要像下面这样修改属性，否则不会触发更新
+  // 不要像下面这样修改属性，否则不会触发更新，需要生成一个新的对象引用
   // data[0].color = hasClick ? '#EE6DD2' : '#0093EE';
   const list = data.map(x => Object.assign({}, x, {
     color: hasClick ? '#EE6DD2' : '#0093EE',
   }))
+
+  const onClick = evt => {
+    console.log(evt);
+    setClick(preState => !preState);
+  }
 
   return (
     <ConsoleComboChart
@@ -47,10 +52,7 @@ export default () => {
       config={config}
       height={300}
       event={{
-        'interval:click': evt => {
-          console.log(evt);
-          setClick(!hasClick);
-        }
+        'interval:click': onClick,
       }}
     />
   );
