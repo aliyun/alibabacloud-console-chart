@@ -18,13 +18,11 @@ const data = [
 
 const config = {
   tooltip: {
-    nameFormatter: function(v) {
-      return 'name: ' + v;
-    },
-    valueFormatter: function(v, data) {
-      return 'value: ' + parseFloat(String(data.percent * 100)).toFixed(0) + '%';
-    },
-  },
+    itemTpl: '<li data-index={index}>' +
+      '<span style="background-color:{color};width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:8px;"></span>' +
+      'v{name}: {value}%' +
+      '</li>',
+  }
 };
 
 export default () => (
