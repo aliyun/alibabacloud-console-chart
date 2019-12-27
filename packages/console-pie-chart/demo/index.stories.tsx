@@ -8,6 +8,8 @@ import Legend from './Legend';
 import Circle from './Circle';
 import CircleGuide from './CircleGuide';
 import Select from './Select';
+import SelectCircleGuide from './SelectCircleGuide';
+import ComplexTooltip from './ComplexTooltip';
 
 storiesOf('ConsolePieChart', module)
   .add('基本用法', () => <Basic />)
@@ -16,4 +18,6 @@ storiesOf('ConsolePieChart', module)
   .add('配置legend', () => <Legend />)
   .add('基础环状图', () => <Circle />)
   .add('环状带Guide', () => <CircleGuide />)
-  .add('选中状态', () => <Select />);
+  .add('选中状态', () => <Select />)
+  .add('根据选中状态更新环内Guide', () => <SelectCircleGuide />)
+  .add('复杂Tooltip', () => <ComplexTooltip />);
