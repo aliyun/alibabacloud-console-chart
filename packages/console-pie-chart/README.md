@@ -33,6 +33,14 @@ import { ConsolePieChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:Legend](./demo/Legend.tsx)
 
+## 单色
+
+[MDXInstruction:importDemo:SingleColors](./demo/SingleColors.tsx)
+
+## 指定颜色
+
+[MDXInstruction:importDemo:MultiColors](./demo/MultiColors.tsx)
+
 ## 基础环状图
 
 [MDXInstruction:importDemo:Circle](./demo/Circle.tsx)

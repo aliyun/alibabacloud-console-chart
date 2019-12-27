@@ -10,12 +10,16 @@ import CircleGuide from './CircleGuide';
 import Select from './Select';
 import SelectCircleGuide from './SelectCircleGuide';
 import ComplexTooltip from './ComplexTooltip';
+import SingleColors from './SingleColors';
+import MultiColors from './MultiColors';
 
 storiesOf('ConsolePieChart', module)
   .add('基本用法', () => <Basic />)
   .add('带label指标', () => <Label />)
   .add('自定义tooltip', () => <Tooltip />)
   .add('配置legend', () => <Legend />)
+  .add('单色', () => <SingleColors />)
+  .add('指定颜色', () => <MultiColors />)
   .add('基础环状图', () => <Circle />)
   .add('环状带Guide', () => <CircleGuide />)
   .add('选中状态', () => <Select />)
