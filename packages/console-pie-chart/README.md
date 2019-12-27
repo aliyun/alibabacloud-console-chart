@@ -27,7 +27,7 @@ import { ConsolePieChart } from '@alicloud/console-chart';
 
 ## 复杂Tooltip
 
-[MDXInstruction:importDemo:CircleGuide](./demo/ComplexTooltip.tsx)
+[MDXInstruction:importDemo:ComplexTooltip](./demo/ComplexTooltip.tsx)
 
 ## 配置legend
 
@@ -43,11 +43,11 @@ import { ConsolePieChart } from '@alicloud/console-chart';
 
 ## 选中状态
 
-[MDXInstruction:importDemo:CircleGuide](./demo/Select.tsx)
+[MDXInstruction:importDemo:Select](./demo/Select.tsx)
 
 ## 根据选中状态更新环内Guide
 
-[MDXInstruction:importDemo:CircleGuide](./demo/SelectCircleGuide.tsx)
+[MDXInstruction:importDemo:SelectCircleGuide](./demo/SelectCircleGuide.tsx)
 
 # 配置 Config
 
