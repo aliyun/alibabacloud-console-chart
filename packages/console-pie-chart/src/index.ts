@@ -133,9 +133,7 @@ const cfg: any = {
 
   afterRender(chart, config) {
     // 这里主要是为了实现 selectData 特性，保证在1s内只调用一次selectGeom，并且是在节流结束之后触发, 保证最后一次的正确显示
-    if (this.throttleSelect) {
-      this.throttleSelect(config);
-    } else {
+    if (!this.throttleSelect) {
       this.throttleSelect = Utils.throttle(
         config => {
           selectGeom(this.geom, config.selectData);
@@ -144,6 +142,7 @@ const cfg: any = {
         { trailing: true }
       );
     }
+    this.throttleSelect(config);
   },
 
   destroy() {
