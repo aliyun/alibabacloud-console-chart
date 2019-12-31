@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-chart",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -18,16 +18,16 @@
     "access": "public"
   },
   "dependencies": {
-    "@alicloud/console-bar-chart": "^0.2.0",
-    "@alicloud/console-combo-chart": "^0.2.0",
-    "@alicloud/console-dot-chart": "^0.2.0",
-    "@alicloud/console-funnel-chart": "^0.2.0",
-    "@alicloud/console-line-chart": "^0.2.0",
-    "@alicloud/console-miniline-chart": "^0.2.0",
-    "@alicloud/console-pie-chart": "^0.2.0",
-    "@alicloud/console-radar-chart": "^0.2.0",
-    "@alicloud/console-rose-chart": "^0.2.0",
-    "@alicloud/console-shared-utils": "^0.1.0-alpha.4"
+    "@alicloud/console-bar-chart": "^0.3.0",
+    "@alicloud/console-combo-chart": "^0.3.0",
+    "@alicloud/console-dot-chart": "^0.3.0",
+    "@alicloud/console-funnel-chart": "^0.3.0",
+    "@alicloud/console-line-chart": "^0.3.0",
+    "@alicloud/console-miniline-chart": "^0.3.0",
+    "@alicloud/console-pie-chart": "^0.3.0",
+    "@alicloud/console-radar-chart": "^0.3.0",
+    "@alicloud/console-rose-chart": "^0.3.0",
+    "@alicloud/console-shared-utils": "^0.3.0"
   },
   "gitHead": "c79b139c3484d9590cfe3e43b106c5e718bf2ff9"
 }

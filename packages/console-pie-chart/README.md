@@ -45,6 +45,10 @@ import { ConsolePieChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:Circle](./demo/Circle.tsx)
 
+## 环间距
+
+[MDXInstruction:importDemo:CircleSlice](./demo/CircleSlice.tsx)
+
 ## 环状带Guide
 
 [MDXInstruction:importDemo:CircleGuide](./demo/CircleGuide.tsx)
@@ -89,6 +93,9 @@ import { ConsolePieChart } from '@alicloud/console-chart';
 
 ### innerRadius: Number
 内圈半径，需要配合`cycle`使用
+
+### sliceGap: Number
+需要配合`cycle`使用，环图情况下，可以使用该参数来调整每个环之间的间距，数值范围0-1
 
 ### select: Boolean
 是否支持选中态

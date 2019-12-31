@@ -10,9 +10,12 @@ import {
   Utils,
   Constants,
   dataAdapter,
+  G2,
 } from '@alicloud/console-shared-utils';
 
 const COMPONENT_NAME = 'ConsolePieChart';
+
+const Shape = G2.Shape;
 
 function transformCoord(coord, transform: any = {}) {
   const { type, param } = transform;
@@ -84,6 +87,29 @@ const cfg: any = {
     }
     chart.source(adaptData, defs);
 
+    const hasSliceGap: boolean = config.cycle && (config.sliceGap >= 0 && config.sliceGap <= 1);
+    if (hasSliceGap) {
+      const sliceNumber: number = config.sliceGap;
+      Shape.registerShape('interval', 'sliceShape', {
+        draw(cfg, container) {
+          const points = cfg.points;
+          let path = [];
+          path.push([ 'M', points[0].x, points[0].y ]);
+          path.push([ 'L', points[1].x, points[1].y - sliceNumber ]);
+          path.push([ 'L', points[2].x, points[2].y - sliceNumber ]);
+          path.push([ 'L', points[3].x, points[3].y ]);
+          path.push('Z');
+          path = this.parsePath(path);
+          return container.addShape('path', {
+            attrs: {
+              fill: cfg.color,
+              path
+            }
+          });
+        }
+      });
+    }
+
     // 重要：绘制饼图时，必须声明 theta 坐标系
     const thetaConfig: any = {
       radius: 1, // 设置饼图的为100% 大小，具体大小改变在 beforeInit 中diameter的值，目前为0.8
@@ -115,11 +141,20 @@ const cfg: any = {
     // position若直接使用value导致图例点击某项隐藏，余下展示不为值和不为1
     const colors =
       config.colors || Utils.get(this, 'consoleTheme.colors_24') || Constants.COLORS_24;
-    this.geom = chart
+    if (hasSliceGap) {
+      this.geom = chart
+      .intervalStack()
+      .position('y')
+      .color('x', colors)
+      .shape('sliceShape')
+      .select(config.select);
+    } else {
+      this.geom = chart
       .intervalStack()
       .position('y')
       .color('x', colors)
       .select(config.select);
+    }
 
     g2Tooltip(chart, config, config.tooltip, { showTitle: false });
     g2Legend(chart, config, config.legend);
