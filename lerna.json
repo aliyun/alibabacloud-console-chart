@@ -23,6 +23,7 @@
     "packages/console-pie-chart",
     "packages/console-radar-chart",
     "packages/console-rose-chart",
+    "packages/console-sankey-chart",
     "packages/console-shared-utils",
     "packages/console-tree-graph"
   ],
