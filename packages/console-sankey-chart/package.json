@@ -19,10 +19,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "https://github.com/aliyun/alibabacloud-console-chart/tree/master/packages/console-rose-chart",
+  "repository": "https://github.com/aliyun/alibabacloud-console-chart/tree/master/packages/console-sankey-chart",
   "license": "MIT",
   "dependencies": {
     "@alicloud/console-shared-utils": "^0.1.0-alpha.4",
+    "d3-sankey": "^0.12.3",
     "tslib": "^1.10.0"
   },
   "gitHead": "c79b139c3484d9590cfe3e43b106c5e718bf2ff9"

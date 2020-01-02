@@ -23,9 +23,9 @@
     "packages/console-pie-chart",
     "packages/console-radar-chart",
     "packages/console-rose-chart",
-    "packages/console-sankey-chart",
     "packages/console-shared-utils",
-    "packages/console-tree-graph"
+    "packages/console-tree-graph",
+    "packages/console-sankey-chart"
   ],
   "version": "0.4.0-alpha.0"
 }

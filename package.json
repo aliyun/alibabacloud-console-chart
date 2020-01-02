@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "lerna": "^3.18.4",
-    "tslib": "^1.10.0"
+    "tslib": "^1.10.0",
+    "d3-sankey": "^0.12.3"
   }
 }

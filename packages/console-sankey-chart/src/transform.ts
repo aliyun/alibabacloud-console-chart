@@ -2,13 +2,13 @@
  * for Sankey Diagram
  * graph data required (nodes, edges)
  */
-import {
+const {
   sankey,
   sankeyLeft,
   sankeyRight,
   sankeyCenter,
   sankeyJustify
-} from 'd3-sankey';
+} =  require('d3-sankey');
 
 const isString = val => typeof val === 'string';
 const isFunction = val => val && typeof val === 'function';
