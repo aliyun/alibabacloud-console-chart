@@ -21,14 +21,19 @@ import { ConsoleSankeyChart } from '@alicloud/console-chart';
 
 # 示例 Demo
 
+关系图情况复杂，使用方式多变，如果有未满足的场景，烦请联系我们。
+
 ## 基本用法
 
 [MDXInstruction:importDemo:Basic](./demo/Basic.tsx)
 
-## 多列情况'
+## 多列情况
 
 [MDXInstruction:importDemo:MultiCol](./demo/MultiCol.tsx)
 
+## 配置边
+
+[MDXInstruction:importDemo:LinkStyle](./demo/LinkStyle.tsx)
 
 # 配置 Config
 
