@@ -1,7 +1,11 @@
 import React from 'react';
-import { ConsoleSankeyChart } from '@alicloud/console-chart';
+// import { ConsoleRoseChart } from '@alicloud/console-chart';
+import ConsoleSankeyChart from '../src';
 
-const config = {}
+const config = {
+  linkType: 'line',
+  linkColor: '#8FD2EC',
+}
 
 export default () => (
   <ConsoleSankeyChart config={config} data={data} height={300} />

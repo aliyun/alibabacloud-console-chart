@@ -43,12 +43,15 @@ export default function transform(dv, options) {
     .nodeWidth(options.nodeWidth)
     .nodePadding(options.nodePadding)
     .extent([[ 0, 0 ], [ 1, 1 ]]);
+
   if (isFunction(options.nodeId)) {
     sankeyProcessor.nodeId(options.nodeId);
   }
+
   if (nodeAlign) {
     sankeyProcessor.nodeAlign(nodeAlign);
   }
+
   sankeyProcessor(dv);
   // post process (x, y), etc.
   dv.nodes.forEach(node => {

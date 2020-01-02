@@ -40,6 +40,12 @@ const cfg = {
 
     transform(adaptData, {});
 
+    const {
+      linkType = 'arc',
+      linkColor = '#ECECEC',
+      linkOpacity = 0.6,
+    } = config;
+
     g2Legend(chart, config, config.legend);
 
     g2Tooltip(chart, config, config.tooltip);
@@ -54,9 +60,9 @@ const cfg = {
     edgeView.source(adaptData.edges);
     edgeView.edge()
       .position('x*y')
-      .shape('arc')
-      .color('#ECECEC')
-      .opacity(0.6);
+      .shape(linkType)
+      .color(linkColor)
+      .opacity(linkOpacity);
 
     g2Size(edgeView, config, config.size);
     g2Style(edgeView, config, config.style);
