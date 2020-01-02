@@ -9,7 +9,6 @@ import {
   g2Style,
   Constants,
 } from '@alicloud/console-shared-utils';
-// import DataSet from '@antv/data-set';
 
 import transform from './transform';
 
