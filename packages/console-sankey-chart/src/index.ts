@@ -11,7 +11,7 @@ import {
 } from '@alicloud/console-shared-utils';
 
 import transform from './transform';
-import ConfigTypes from './index.d';
+import ConfigTypes from './types';
 
 const COMPONENT_NAME = 'ConsoleSankeyChart';
 
