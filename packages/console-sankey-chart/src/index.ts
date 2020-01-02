@@ -11,14 +11,16 @@ import {
 } from '@alicloud/console-shared-utils';
 
 import transform from './transform';
+import ConfigTypes from './index.d';
 
 const COMPONENT_NAME = 'ConsoleSankeyChart';
+
 const cfg = {
   getUnifiedProps(props) {
     const { config } = props;
     const defaultConfig = getConsoleConfig()[COMPONENT_NAME];
 
-    const newConfig = Utils.merge({}, defaultConfig, config);
+    const newConfig = Utils.merge({}, defaultConfig, config as ConfigTypes);
 
     const unionProps = Object.assign({}, props, {
       config: newConfig,
@@ -72,11 +74,11 @@ const cfg = {
       .style({
         stroke: '#ccc'
       });
-    chart.render();
 
     g2Size(nodeView, config, config.size);
     g2Style(nodeView, config, config.style);
     g2Label(nodeView, config, config.label);
+
     chart.render();
   },
 };
