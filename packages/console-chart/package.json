@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-chart",
-  "version": "0.4.0-alpha.2",
+  "version": "0.4.0-alpha.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -27,7 +27,7 @@
     "@alicloud/console-pie-chart": "^0.4.0-alpha.0",
     "@alicloud/console-radar-chart": "^0.4.0-alpha.0",
     "@alicloud/console-rose-chart": "^0.4.0-alpha.0",
-    "@alicloud/console-sankey-chart": "^0.4.0-alpha.2",
+    "@alicloud/console-sankey-chart": "^0.4.0-alpha.3",
     "@alicloud/console-shared-utils": "^0.4.0-alpha.0"
   },
   "gitHead": "76efc38b27cda1d046b06c2e1cf8ac83de63ced1"
