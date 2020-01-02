@@ -1,6 +1,5 @@
 import React from 'react';
-// import { ConsoleRoseChart } from '@alicloud/console-chart';
-import ConsoleSankeyChart from '../src';
+import { ConsoleSankeyChart } from '@alicloud/console-chart';
 
 const config = {
   linkType: 'line',
