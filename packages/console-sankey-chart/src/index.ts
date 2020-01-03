@@ -38,13 +38,23 @@ const cfg = {
       edges: linksData.data || [],
     };
 
-    transform(adaptData, {});
-
     const {
+      direction = 'horizontal',
       linkType = 'arc',
       linkColor = '#ECECEC',
       linkOpacity = 0.6,
+      nodeAlign = 'justify',
+      nodeWidth = 0.02,
+      nodePadding = 0.02,
     } = config;
+
+    const d3SankeyConfig = {
+      nodeAlign,
+      nodeWidth,
+      nodePadding,
+    };
+
+    transform(adaptData, d3SankeyConfig);
 
     g2Legend(chart, config, config.legend);
 
@@ -56,10 +66,15 @@ const cfg = {
       y: { sync: true }
     });
 
+    let position = 'x*y';
+    if (direction === 'vertical') {
+      position = 'y*x';
+    }
+
     const edgeView = chart.view();
     edgeView.source(adaptData.edges);
     edgeView.edge()
-      .position('x*y')
+      .position(position)
       .shape(linkType)
       .color(linkColor)
       .opacity(linkOpacity);
@@ -75,7 +90,7 @@ const cfg = {
 
     nodeView.source(adaptData.nodes);
     nodeView.polygon()
-      .position('x*y') // nodes数据的x、y由layout方法计算得出
+      .position(position) // nodes数据的x、y由layout方法计算得出
       .color('name', colors)
       .style({
         stroke: '#ccc'

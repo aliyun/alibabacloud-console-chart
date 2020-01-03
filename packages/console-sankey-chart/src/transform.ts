@@ -14,10 +14,10 @@ const isString = val => typeof val === 'string';
 const isFunction = val => val && typeof val === 'function';
 
 const ALIGN_METHOD = {
-  sankeyLeft,
-  sankeyRight,
-  sankeyCenter,
-  sankeyJustify
+  start: sankeyLeft,
+  end: sankeyRight,
+  center: sankeyCenter,
+  justify: sankeyJustify
 };
 
 const DEFAULT_OPTIONS = {
@@ -25,7 +25,7 @@ const DEFAULT_OPTIONS = {
   value: node => node.value,
   source: edge => edge.source,
   target: edge => edge.target,
-  nodeAlign: 'sankeyJustify',
+  nodeAlign: 'justify',
   nodeWidth: 0.02,
   nodePadding: 0.02
 };

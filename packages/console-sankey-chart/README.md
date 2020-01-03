@@ -35,6 +35,16 @@ import { ConsoleSankeyChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:LinkStyle](./demo/LinkStyle.tsx)
 
+## 垂直布局
+通过`direction`属性来进行改变布局方向，有`vertical`,`horizontal`两个值。
+
+[MDXInstruction:importDemo:Vertical](./demo/Vertical.tsx)
+
+## 节点排列方式
+节点排列方式通过`nodeAlign`属性来进行配置，有`start``end``center``justify`四个值，默认为`justify`
+
+[MDXInstruction:importDemo:NodeAlign](./demo/NodeAlign.tsx)
+
 # 配置 Config
 
 # 数据列配置
@@ -84,3 +94,12 @@ const data = [
 | style | 配置自定义样式 |
 
 ## 专属配置
+
+### direction: String
+通过`direction`属性来进行改变布局方向，有`vertical`,`horizontal`两个值。
+
+### linkType: String
+用来简单配置边的类型。
+
+### nodeAlign: String
+节点排列方式通过`nodeAlign`属性来进行配置，有`start``end``center``justify`四个值，默认为`justify`
