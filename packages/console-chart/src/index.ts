@@ -7,6 +7,7 @@ import ConsolePieChart from '@alicloud/console-pie-chart';
 import ConsoleDotChart from '@alicloud/console-dot-chart';
 import ConsoleRadarChart from '@alicloud/console-radar-chart';
 import ConsoleRoseChart from '@alicloud/console-rose-chart';
+import ConsoleSankeyChart from '@alicloud/console-sankey-chart';
 
 import { G2, setConsoleConfig, setConsoleTheme } from '@alicloud/console-shared-utils';
 
@@ -20,6 +21,7 @@ export {
   ConsoleDotChart,
   ConsoleRadarChart,
   ConsoleRoseChart,
+  ConsoleSankeyChart,
   setConsoleConfig,
   setConsoleTheme,
   G2,

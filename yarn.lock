@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@alicloud/console-shared-utils@^0.1.0-alpha.4":
+  version "0.1.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@alicloud/console-shared-utils/-/console-shared-utils-0.1.0-beta.1.tgz#d29eb365f2c6301bcf5587e32eacf68cfae79581"
+  integrity sha512-Y6EzHaOrewKmbf1CkPv8vU4LSzo8ojDPg2e7SJF4LxpqMbgTmDjuSAMFeaTMCpKBpDSBoLNaBZOlzJ0ZqI9jww==
+  dependencies:
+    "@antv/g2" "3.5.8-beta.1"
+    lodash "^4.17.15"
+    tslib "^1.10.0"
+
 "@antv/adjust@~0.1.0":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@antv/adjust/-/adjust-0.1.1.tgz#e263ab0e1a1941a648842fc086cf65a7e3b75e98"

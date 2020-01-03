@@ -24,7 +24,8 @@
     "packages/console-radar-chart",
     "packages/console-rose-chart",
     "packages/console-shared-utils",
-    "packages/console-tree-graph"
+    "packages/console-tree-graph",
+    "packages/console-sankey-chart"
   ],
-  "version": "0.3.0"
+  "version": "0.4.2"
 }
