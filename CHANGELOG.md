@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.1(2020-01-02)
+### Fixs
+- 升级版本号修复部分包发包失败的错误版本号
+
+## 0.4.0(2020-01-02)
+### Features
+- 桑基图Console-sankey-chart支持
+
 ## 0.3.0(2019-12-30)
 ### Features
 - Console-pie-chart 加入`sliceGap`支持

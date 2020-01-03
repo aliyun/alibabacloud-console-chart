@@ -58,7 +58,14 @@ const cfg = {
 
     g2Legend(chart, config, config.legend);
 
-    g2Tooltip(chart, config, config.tooltip);
+    let tooltip = {
+      showTitle: false,
+    };
+    if (config.tooltip) {
+      tooltip = config.tooltip;
+    }
+
+    g2Tooltip(chart, config, tooltip);
 
     chart.axis(false);
     chart.scale({
@@ -77,7 +84,19 @@ const cfg = {
       .position(position)
       .shape(linkType)
       .color(linkColor)
-      .opacity(linkOpacity);
+      .opacity(linkOpacity)
+      .tooltip('source*target', (source, target) => {
+        let name = source.index;
+        let value = target.index;
+        if (source.name !== undefined && target.name !== undefined) {
+          name = source.name;
+          value = target.name;
+        }
+        return {
+          name,
+          value,
+        };
+      })
 
     g2Size(edgeView, config, config.size);
     g2Style(edgeView, config, config.style);
@@ -94,7 +113,10 @@ const cfg = {
       .color('name', colors)
       .style({
         stroke: '#ccc'
-      });
+      })
+      .tooltip('name', name => ({
+        name,
+      }))
 
     g2Size(nodeView, config, config.size);
     g2Style(nodeView, config, config.style);

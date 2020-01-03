@@ -1,5 +1,6 @@
 import React from 'react';
-import { ConsoleSankeyChart } from '@alicloud/console-chart';
+// import { ConsoleSankeyChart } from '@alicloud/console-chart';
+import ConsoleSankeyChart from '../src';
 
 const config = {}
 
