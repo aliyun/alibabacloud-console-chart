@@ -49,8 +49,6 @@ const cfg = {
       topology = false,
     } = config;
 
-    console.log(topology);
-
     const d3SankeyConfig = {
       nodeAlign,
       nodeWidth,
