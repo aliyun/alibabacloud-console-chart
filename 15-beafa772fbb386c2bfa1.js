@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{"+EtT":function(a,n,t){"use strict";t.r(n);var e=t("q1tI"),c=t.n(e),r=t("nRmr"),i=[{name:"奇怪的数据量",data:[["2015",20],["2016",5],["2017",15],["2018",30],["2019",40],["2015",12],["2016",15],["2017",35],["2018",20],["2019",40]]}],o={area:!0,stack:!0};n.default=function(){return c.a.createElement(r.f,{data:i,config:o,height:300})}}}]);
-//# sourceMappingURL=15-beafa772fbb386c2bfa1.js.map

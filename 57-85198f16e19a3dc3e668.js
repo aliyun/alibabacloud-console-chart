@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[57],{nx8n:function(n,a,t){"use strict";t.r(a);var e=t("q1tI"),o=t.n(e),r=t("nRmr"),c=[{name:"奇怪的数据量",data:[["2015",20],["2016",5],["2017",15],["2018",30],["2019",40]]}],i={area:!0,smooth:!0};a.default=function(){return o.a.createElement(r.f,{data:c,config:i,height:300})}}}]);
-//# sourceMappingURL=57-85198f16e19a3dc3e668.js.map

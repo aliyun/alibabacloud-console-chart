@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[27],{MAy7:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),r=t.n(n),o=t("nRmr"),s={};a.default=function(){return r.a.createElement(o.j,{config:s,data:u,height:300})};var u=[{name:"节点数据",type:"node",data:[{name:"ecs"},{name:"oss"},{name:"oos"},{name:"cdn"},{name:"composer"},{name:"rds"}]},{name:"边数据",type:"link",data:[{source:3,target:0,value:5},{source:2,target:0,value:5},{source:1,target:0,value:5},{source:0,target:4,value:5},{source:0,target:5,value:10}]}]}}]);
+//# sourceMappingURL=27-0e5ede832847919bbaac.js.map
