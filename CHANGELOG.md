@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.3(2020-01-03)
+### Features
+- Console-sankey-chart加入拓扑图的支持
+
+## 0.4.2(2020-01-03)
+### Fixs
+- 修复Console-sankey-chart默认Tooltip展示无效信息的问题
+
 ## 0.4.1(2020-01-02)
 ### Fixs
 - 升级版本号修复部分包发包失败的错误版本号
