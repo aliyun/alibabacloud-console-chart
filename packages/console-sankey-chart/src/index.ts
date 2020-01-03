@@ -46,7 +46,10 @@ const cfg = {
       nodeAlign = 'justify',
       nodeWidth = 0.02,
       nodePadding = 0.02,
+      topology = false,
     } = config;
+
+    console.log(topology);
 
     const d3SankeyConfig = {
       nodeAlign,
@@ -54,7 +57,11 @@ const cfg = {
       nodePadding,
     };
 
-    transform(adaptData, d3SankeyConfig);
+    const customOptions = {
+      topology,
+    };
+
+    transform(adaptData, d3SankeyConfig, customOptions);
 
     g2Legend(chart, config, config.legend);
 

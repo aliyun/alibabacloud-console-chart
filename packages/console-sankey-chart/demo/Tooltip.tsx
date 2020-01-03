@@ -1,7 +1,8 @@
 import React from 'react';
 import { ConsoleSankeyChart } from '@alicloud/console-chart';
 
-const config = {}
+const config = {
+}
 
 export default () => (
   <ConsoleSankeyChart config={config} data={data} height={300} />

@@ -6,6 +6,8 @@ import MultiCol from './MultiCol';
 import LinkStyle from './LinkStyle';
 import Vertical from './Vertical';
 import NodeAlign from './NodeAlign';
+import Tooltip from './Tooltip';
+import Topology from './Topology';
 
 storiesOf('ConsoleSankeyChart', module)
   .add('基本桑基图', () => <Basic />)
@@ -13,3 +15,5 @@ storiesOf('ConsoleSankeyChart', module)
   .add('配置边的样式', () => <LinkStyle />)
   .add('垂直布局', () => <Vertical />)
   .add('节点排列方式', () => <NodeAlign />)
+  .add('自定义Tooltip', () => <Tooltip />)
+  .add('拓扑图', () => <Topology />)

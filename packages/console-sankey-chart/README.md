@@ -41,9 +41,15 @@ import { ConsoleSankeyChart } from '@alicloud/console-chart';
 [MDXInstruction:importDemo:Vertical](./demo/Vertical.tsx)
 
 ## 节点排列方式
-节点排列方式通过`nodeAlign`属性来进行配置，有`start``end``center``justify`四个值，默认为`justify`
+节点排列方式通过`nodeAlign`属性来进行配置，有`start end center justify`四个值，默认为`justify`
 
 [MDXInstruction:importDemo:NodeAlign](./demo/NodeAlign.tsx)
+
+## 拓扑图
+通过使用`topology`属性来配置拓扑图
+
+[MDXInstruction:importDemo:Topology](./demo/Topology.tsx)
+
 
 # 配置 Config
 
@@ -93,6 +99,7 @@ const data = [
 | size | 配置自定义大小 |
 | style | 配置自定义样式 |
 
+
 ## 专属配置
 
 ### direction: String
@@ -102,4 +109,7 @@ const data = [
 用来简单配置边的类型。
 
 ### nodeAlign: String
-节点排列方式通过`nodeAlign`属性来进行配置，有`start``end``center``justify`四个值，默认为`justify`
+节点排列方式通过`nodeAlign`属性来进行配置，有`start end center justify`四个值，默认为`justify`
+
+### topology: Boolean
+是否开启拓扑图模式。在拓扑图模式下，一个节点身上只会有一个连接点，且连接点位于节点的中间处

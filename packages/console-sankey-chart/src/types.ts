@@ -17,6 +17,7 @@ enum directions {
 }
 
 export default interface config {
+  topology: boolean,
   direction?: directions,
   linkType?: linkTypes,
   linkColor?: string,

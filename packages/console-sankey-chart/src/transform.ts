@@ -30,7 +30,10 @@ const DEFAULT_OPTIONS = {
   nodePadding: 0.02
 };
 
-export default function transform(dv, options) {
+export default function transform(dv, options, customOptions) {
+  const {
+    topology,
+  } = customOptions;
   options = Object.assign({}, DEFAULT_OPTIONS, options);
   let nodeAlign = null;
   if (isString(options.nodeAlign)) {
@@ -64,15 +67,36 @@ export default function transform(dv, options) {
     node.x = [ x0, x1, x1, x0 ];
     node.y = [ y0, y0, y1, y1 ];
   });
-  dv.edges.forEach(edge => {
-    const {
-      source,
-      target
-    } = edge;
-    const sx = source.x1;
-    const tx = target.x0;
-    edge.x = [ sx, sx, tx, tx ];
-    const offset = edge.width / 2;
-    edge.y = [ edge.y0 + offset, edge.y0 - offset, edge.y1 + offset, edge.y1 - offset ];
-  });
+  if (topology) {
+    dv.edges.forEach(edge => {
+      const {
+        source,
+        target
+      } = edge;
+      const sx = source.x1;
+      const tx = target.x0;
+      const sy = source.y0;
+      const ty = target.y1;
+      edge.x = [ sx, sx, tx, tx ];
+      // const offset = edge.width / 2;
+      edge.y = [ 
+        sy + (source.y1 - source.y0) / 2 ,
+        sy + (source.y1 - source.y0) / 2 ,
+        ty + (target.y0 - target.y1) / 2 ,
+        ty + (target.y0 - target.y1) / 2
+      ];
+    });
+  } else {
+    dv.edges.forEach(edge => {
+      const {
+        source,
+        target
+      } = edge;
+      const sx = source.x1;
+      const tx = target.x0;
+      edge.x = [ sx, sx, tx, tx ];
+      const offset = edge.width / 2;
+      edge.y = [ edge.y0 + offset, edge.y0 - offset, edge.y1 + offset, edge.y1 - offset ];
+    });
+  }
 }
