@@ -119,13 +119,19 @@ const cfg = {
       .style({
         stroke: '#ccc'
       })
+      // .label('name', {
+      //   useHtml: true,
+      //   htmlTemplate: (text, item, index) => {
+      //     return `<div>${text}</div>`;
+      //   },
+      // })
       .tooltip('name', name => ({
         name,
       }))
 
     g2Size(nodeView, config, config.size);
     g2Style(nodeView, config, config.style);
-    g2Label(nodeView, config, config.label);
+    // g2Label(nodeView, config, config.label);
 
     chart.render();
   },

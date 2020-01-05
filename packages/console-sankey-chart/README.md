@@ -50,6 +50,10 @@ import { ConsoleSankeyChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:Topology](./demo/Topology.tsx)
 
+## 垂直拓扑图
+
+[MDXInstruction:importDemo:TopologyVertical](./demo/TopologyVertical.tsx)
+
 
 # 配置 Config
 
