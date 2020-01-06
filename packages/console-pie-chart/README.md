@@ -33,6 +33,14 @@ import { ConsolePieChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:Legend](./demo/Legend.tsx)
 
+## legend在右边
+
+通过设置Chart的`右Padding`和Legend的`offsetY`属性来控制legend的位置。
+
+Note: `右Padding`是指圆形的右边界到渲染区域的右边界。`offsetY`是指圆形的右边界到legend的左边界。
+
+[MDXInstruction:importDemo:LegendRight](./demo/LegendRight.tsx)
+
 ## 单色
 
 [MDXInstruction:importDemo:SingleColors](./demo/SingleColors.tsx)
