@@ -6,6 +6,7 @@ import Label from './Label';
 import Tooltip from './Tooltip';
 import Legend from './Legend';
 import LegendRight from './LegendRight';
+import LegendTip from './LegendTip';
 import Circle from './Circle';
 import CircleGuide from './CircleGuide';
 import Select from './Select';
@@ -21,6 +22,7 @@ storiesOf('ConsolePieChart', module)
   .add('自定义tooltip', () => <Tooltip />)
   .add('配置legend', () => <Legend />)
   .add('legend在右边', () => <LegendRight />)
+  .add('legend tip', () => <LegendTip />)
   .add('单色', () => <SingleColors />)
   .add('指定颜色', () => <MultiColors />)
   .add('基础环状图', () => <Circle />)

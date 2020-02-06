@@ -241,8 +241,18 @@ itemTpl: '<li class="g2-legend-list-item item-{index} {checked}" data-color="{or
 ### hoverable: Boolean
 **针对分类图例**，设置是否开启鼠标 hover 至图例的交互效果，默认为 true，即开启动画。
 
-### onHover: Function
+### onHover: event => void
 用于自定义鼠标 hover 图例项的交互，当 `hoverable` 为 false 不生效。
+
+### tip: boolean
+是否开启`legend`hover状态下悬浮提示。
+
+内部通过`onHover`属性实现，如自己配置了`onHover`属性，该属性将会无效。
+
+### tipFormatter: value => void
+开启`tip`配置下，可通过该属性格式化`tip`展示的内容。
+
+取值优先级：`tipFormatter` => `itemFormatter` => `value`
 
 ### reactive: Boolean
 设置是否开启鼠标 hover 图表元素时，图例对应项的高亮效果。默认为 false，即不开启动画。
