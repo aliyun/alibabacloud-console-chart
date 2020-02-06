@@ -41,6 +41,14 @@ Note: `右Padding`是指圆形的右边界到渲染区域的右边界。`offsetY
 
 [MDXInstruction:importDemo:LegendRight](./demo/LegendRight.tsx)
 
+## legend tip
+
+配置`legend`的`tip`属性可开启legend悬浮提示。开启tip配置之后，可进一步配置`tipFormatter`属性来进行格式化tip显示内容（取值优先级：`tipFormatter` => `itemFormatter` => `value`）
+
+Note: `legend`的`tip`属性是通过`dom`的`title`属性来进行简单实现的，只能满足简单场景。
+
+[MDXInstruction:importDemo:LegendTip](./demo/LegendTip.tsx)
+
 ## 单色
 
 [MDXInstruction:importDemo:SingleColors](./demo/SingleColors.tsx)

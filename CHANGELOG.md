@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.4(2020-02-06)
+### Features
+- Console-shared-utils加入legend.tip属性支持
+
 ## 0.4.3(2020-01-03)
 ### Features
 - Console-sankey-chart加入拓扑图的支持
