@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[37],{"joa+":function(n,e,a){"use strict";a.r(e);var t=a("q1tI"),o=a.n(t),c=a("nRmr"),i=[{name:"年份数据",data:[["2013",14],["2014",15],["2015",16],["2016",18],["2017",20],["2018",21],["2019",24.3],["2020",25]]}],r={colors:"#0093ee"};e.default=function(){return o.a.createElement(c.i,{data:i,config:r,height:300})}}}]);
+//# sourceMappingURL=37-859ecfea3433475f15f5.js.map

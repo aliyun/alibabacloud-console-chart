@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{IETv:function(n,t,e){"use strict";e.r(t);var a=e("q1tI"),i=e.n(a),c=e("nRmr"),r=[{name:"A产品",data:[["毛利润",20],["净利润",15],["成本",5]]}],o={direction:"vertical",align:"left"};t.default=function(){return i.a.createElement(c.d,{data:r,config:o,height:300})}}}]);
+//# sourceMappingURL=15-cae38e070d293240d2e0.js.map

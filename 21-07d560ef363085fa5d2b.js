@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{"XG/2":function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),o=a.n(n),c=a("nRmr"),i=[{name:"ecs",data:[["specification",20],["feature",10],["doc",15]],color:"#0093EE"},{name:"oss",data:[["specification",25],["feature",15],["doc",31]],color:"#E288CE"}],r={xAxis:{label:{formatter:function(e){return e+"~"}}}};t.default=function(){return o.a.createElement(c.h,{data:i,config:r,height:300})}}}]);
+//# sourceMappingURL=21-07d560ef363085fa5d2b.js.map

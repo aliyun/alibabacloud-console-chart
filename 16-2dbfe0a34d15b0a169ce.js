@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{imvu:function(t,n,e){"use strict";e.r(n);var i=e("q1tI"),r=e.n(i),o=e("nRmr"),a=[{name:"Source",data:[["A",4590],["B",2628],["C",1228],["D",825],["E",622],["F",1207]]}],u={padding:[0,170,0,0],legend:{position:"right-center",offsetY:10,offsetX:50,itemFormatter:function(t){return t+"   400   40%"},tip:!0,tipFormatter:function(t){return t+1}}};n.default=function(){return r.a.createElement(o.g,{data:a,config:u,height:200,width:307})}}}]);
+//# sourceMappingURL=16-2dbfe0a34d15b0a169ce.js.map

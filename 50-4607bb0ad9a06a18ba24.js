@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[50],{mDKH:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),c=t.n(a),i=t("nRmr"),o=[{name:"A产品",data:[["2015",20],["2016",5],["2017",15],["2018",30],["2019",40]]}],r={};e.default=function(){return c.a.createElement(i.e,{data:o,config:r,height:300})}}}]);
+//# sourceMappingURL=50-4607bb0ad9a06a18ba24.js.map

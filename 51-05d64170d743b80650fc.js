@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[51],{Km9u:function(t,n,e){"use strict";e.r(n);var a=e("q1tI"),r=e.n(a),i=e("nRmr"),o=[{name:"ECS使用量",type:"bar",yAxis:0,data:[["2015",5],["2016",10],["2017",15],["2018",30],["2019",36]]},{name:"ECS同比增长",type:"line",yAxis:1,data:[["2015",.3],["2016",.1],["2017",.5],["2018",1],["2019",.2]]}],u={yAxis:[{formatter:function(t){return t+"万"}},{formatter:function(t){return 100*t+"%"}}]};n.default=function(){return r.a.createElement(i.b,{data:o,config:u,height:300})}}}]);
-//# sourceMappingURL=51-05d64170d743b80650fc.js.map

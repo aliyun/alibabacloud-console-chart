@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[38],{INaQ:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),o=t.n(a),c=t("nRmr"),i=[{name:"时长",data:[["1年",45],["2年",26],["3年",12],["4年",8],["5年",10],["6年以上",27]]}],p={cycle:!0,legend:{position:"bottom"},sliceGap:.01};e.default=function(){return o.a.createElement(c.g,{data:i,config:p,height:300})}}}]);
+//# sourceMappingURL=38-29e02bc3b9643fe1de78.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[26],{GtWY:function(n,a,i){"use strict";i.r(a);var t=i("q1tI"),e=i.n(t),o=i("nRmr"),r=[{name:"等级",data:[["11",55],["12",26.8],["13",112.8],["14",81.5],["15",61.2],["16",7],["17",12]]}],d={tooltip:{itemTpl:'<li data-index={index}><span style="background-color:{color};width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:8px;"></span>v{name}: {value}%</li>'}};a.default=function(){return e.a.createElement(o.g,{data:r,config:d,height:300})}}}]);
+//# sourceMappingURL=26-ac72ed1d24b14d14074e.js.map
