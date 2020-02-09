@@ -76,9 +76,13 @@ module.exports = {
           { text: "指南", href: "/guides/quick-start" },
           { text: "组件文档", href: "/components/console-bar-chart" },
           {
+            text: '国内镜像',
+            href: 'http://seekhowqiuhao.gitee.io/alibabacloud-console-chart/components/console-bar-chart',
+          },
+          {
             text: 'Github',
             href: 'https://github.com/aliyun/alibabacloud-console-chart',
-          },
+          }
         ],
         // 左侧导航
         // 左侧导航与顶部导航的区别：
