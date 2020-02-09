@@ -44,4 +44,10 @@ export default {
   ConsoleFunnelChart: {},
   ConsoleDotChart: {},
   ConsoleRoseChart: {},
+  ConsoleArclinkChart: {
+    legend: false,
+    tooltip: {
+      showTitle: false,
+    }
+  }
 };

@@ -1,16 +1,14 @@
 import {
-  propertyAssign,
-  propertyMap,
   g2Tooltip,
-  drawLine,
   g2Factory,
   g2Legend,
-  g2Guide,
-  getFinalGeomColors,
+  // getFinalGeomColors,
   getConsoleConfig,
   Utils,
-  dataAdapter,
 } from '@alicloud/console-shared-utils';
+
+import connector from './connector';
+import transform from './transform';
 
 const COMPONENT_NAME = 'ConsoleArclinkChart';
 
@@ -28,43 +26,54 @@ const cfg = {
   },
 
   drawChart(chart, config, data) {
-    const defs: any = {
-      x: propertyAssign(propertyMap.xAxis, {}, config.xAxis),
-      type: {
-        type: 'cat',
-      },
+    const nodesData = data.find(x => x.type === 'node') || {};
+    const linksData = data.find(x => x.type === 'link') || {};
+    const adaptData = {
+      nodes: nodesData.data || [],
+      edges: linksData.data || [],
     };
 
-    defs.y = propertyAssign(
-      propertyMap.yAxis,
-      {
-        type: 'linear',
-        tickCount: 5,
-      },
-      config.yAxis
-    );
-
-    const adaptData = dataAdapter(data, config);
-    chart.source(adaptData, defs);
-
-    const radius = config.radius < 0 ? 1 : config.radius;
-    chart.coord('polar', {
-      radius: Math.min(radius, 1),
-    });
-    chart.axis('x', config.xAxis);
-    chart.axis('y', config.yAxis);
-
-    g2Tooltip(chart, config, config.tooltip, {
-      crosshairs: null,
+    connector(adaptData);
+    transform(adaptData, {
+      marginRatio: 0.5
     });
 
-    const colors = getFinalGeomColors(data, this.consoleTheme);
-    config.colors = colors;
+    console.log(adaptData);
 
-    drawLine(chart, config);
+    const edgeView = chart.view();
+    edgeView.source(adaptData.edges);
+    edgeView.axis(false);
+    edgeView.edge()
+      .position('x*y')
+      .shape('arc')
+      .color('source')
+      .opacity(0.5)
+      .tooltip('source*target');
+
+    const nodeView = chart.view();
+    nodeView.source(adaptData.nodes);
+    nodeView.axis(false);
+    nodeView.point()
+      .position('x*y')
+      .shape('circle')
+      .size('value')
+      .color('id')
+      .opacity(0.5)
+      .style({
+        stroke: 'grey'
+      })
+      .label('name', { // label configuration for non-polar coord
+        offset: -10,
+        textStyle: {
+          textAlign: 'left',
+          rotate: 90
+        }
+      });
+
+    chart.render();
 
     g2Legend(chart, config, config.legend);
-    g2Guide(chart, config, config.guide);
+    g2Tooltip(chart, config, config.tooltip);
 
     chart.render();
   },

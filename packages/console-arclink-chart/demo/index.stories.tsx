@@ -3,5 +3,5 @@ import { storiesOf } from '@storybook/react';
 
 import Basic from './Basic';
 
-storiesOf('ConsoleRadarChart', module)
+storiesOf('ConsoleArclinkChart', module)
   .add('基本用法', () => <Basic />)
