@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.5(2020-02-09)
+### Fixs
+- 修复Console-sankey-chart packages.json依赖版本不正确的问题
+
 ## 0.4.4(2020-02-06)
 ### Features
 - Console-shared-utils加入legend.tip属性支持
