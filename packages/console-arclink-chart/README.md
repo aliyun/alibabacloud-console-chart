@@ -7,8 +7,9 @@ zhName: 弧长链接图
 
 # 引入方式
 
+暂时只支持单独引用。
 ```javascript
-import { ConsoleArclinkChart } from '@alicloud/console-chart';
+import ConsoleArclinkChart from '@alicloud/console-arclink-chart';
 ```
 
 # 示例 Demo
@@ -16,6 +17,10 @@ import { ConsoleArclinkChart } from '@alicloud/console-chart';
 ## 基本使用
 
 [MDXInstruction:importDemo:Basic](./demo/Basic.tsx)
+
+## 极坐标
+
+[MDXInstruction:importDemo:Polar](./demo/Polar.tsx)
 
 # 配置 Config
 
@@ -34,20 +39,8 @@ import { ConsoleArclinkChart } from '@alicloud/console-chart';
 
 ## 专属配置
 
-### symbol: Boolean
-是否展示数据点
-
-### smooth: Boolean
-显示成光滑曲线
-
-### area: Boolean
-是否显示面积雷达图
-
-### stack: Boolean
-是否显示堆栈图, 仅在`area=true`时生效
-
-### radius: Number
-设置极坐标系的半径，可控制显示图形的大小
+### polar: Boolean
+是否使用极坐标体系，展示为圆形
 
 ## 数据列配置
 

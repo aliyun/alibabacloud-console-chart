@@ -7,8 +7,7 @@ import {
   Utils,
 } from '@alicloud/console-shared-utils';
 
-import connector from './connector';
-import transform from './transform';
+import DataSet from '@antv/data-set';
 
 const COMPONENT_NAME = 'ConsoleArclinkChart';
 
@@ -17,7 +16,10 @@ const cfg = {
   getUnifiedProps(props) {
     const { config } = props;
     const defaultConfig = getConsoleConfig()[COMPONENT_NAME];
-    const newConfig = Utils.merge({}, defaultConfig, config);
+    const newConfig = Utils.merge({
+      legend: false,
+      polar: false,
+    }, defaultConfig, config);
     // TODO 处理padding
     return Object.assign({}, props, {
       padding: props.padding || newConfig.padding || 'auto',
@@ -33,15 +35,37 @@ const cfg = {
       edges: linksData.data || [],
     };
 
-    connector(adaptData);
-    transform(adaptData, {
+    const ds = new DataSet();
+    const dv = ds.createView().source(adaptData, {
+      type: 'graph'
+    });
+    dv.transform({
+      type: 'diagram.arc',
       marginRatio: 0.5
     });
 
-    console.log(adaptData);
+    const { polar = false } = config;
+
+    chart.tooltip({
+      showTitle: false,
+      showMarkers: false
+    });
+    chart.scale({
+      x: {
+        nice: true,
+        sync: true,
+      },
+      y: {
+        nice: true,
+        sync: true,
+      },
+    });
 
     const edgeView = chart.view();
-    edgeView.source(adaptData.edges);
+    if (polar) {
+      edgeView.coord('polar').reflect('y');
+    }
+    edgeView.source(dv.edges);
     edgeView.axis(false);
     edgeView.edge()
       .position('x*y')
@@ -51,9 +75,26 @@ const cfg = {
       .tooltip('source*target');
 
     const nodeView = chart.view();
-    nodeView.source(adaptData.nodes);
+    if (polar) {
+      nodeView.coord('polar').reflect('y');
+    }
+    nodeView.source(dv.nodes);
     nodeView.axis(false);
-    nodeView.point()
+    if (polar) {
+      nodeView.point()
+      .position('x*y')
+      .shape('circle')
+      .size('value')
+      .color('id')
+      .opacity(0.5)
+      .style({
+        stroke: 'grey'
+      })
+      .label('name', {
+        labelEmit: true
+      });
+    } else {
+      nodeView.point()
       .position('x*y')
       .shape('circle')
       .size('value')
@@ -63,14 +104,13 @@ const cfg = {
         stroke: 'grey'
       })
       .label('name', { // label configuration for non-polar coord
-        offset: -10,
-        textStyle: {
+        offset: -60,
+        style: {
           textAlign: 'left',
-          rotate: 90
-        }
+        },
+        rotate: Math.PI / 2,
       });
-
-    chart.render();
+    }
 
     g2Legend(chart, config, config.legend);
     g2Tooltip(chart, config, config.tooltip);

@@ -23,6 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "@alicloud/console-shared-utils": "^0.4.4",
+    "@antv/data-set": "^0.11.1",
     "tslib": "^1.10.0"
   },
   "gitHead": "76efc38b27cda1d046b06c2e1cf8ac83de63ced1"

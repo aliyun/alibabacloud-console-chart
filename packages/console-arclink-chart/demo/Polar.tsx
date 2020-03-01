@@ -3,11 +3,12 @@ import { ConsoleArclinkChart } from '@alicloud/console-chart';
 import mock from './data';
 
 const config = {
-  padding: [20, 20, 100],
+  padding: 120,
+  polar: true,
 };
 
 export default () => (
-  <ConsoleArclinkChart data={data} config={config} height={400} width={600} />
+  <ConsoleArclinkChart data={data} config={config} height={600} width={600} />
 );
 
 
