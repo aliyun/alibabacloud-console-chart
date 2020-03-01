@@ -1,5 +1,5 @@
 import React from 'react';
-import { ConsoleArclinkChart } from '@alicloud/console-chart';
+import ConsoleArclinkChart from '@alicloud/console-arclink-chart';
 import mock from './data';
 
 const config = {
