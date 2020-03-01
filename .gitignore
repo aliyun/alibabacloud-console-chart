@@ -8,6 +8,7 @@
 !.editorconfig
 !.storybook
 !.demoProjectTemplate
+!site/.eslintrc.js
 
 site/public/
 lerna-debug.json

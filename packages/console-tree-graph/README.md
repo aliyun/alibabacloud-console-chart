@@ -1,7 +1,3 @@
----
-name: console-tree-graph
-zhName: 基本树图
----
 
 # 树图API
 

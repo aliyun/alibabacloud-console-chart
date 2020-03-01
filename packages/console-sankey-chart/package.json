@@ -22,7 +22,7 @@
   "repository": "https://github.com/aliyun/alibabacloud-console-chart/tree/master/packages/console-sankey-chart",
   "license": "MIT",
   "dependencies": {
-    "@alicloud/console-shared-utils": "^0.1.0-alpha.4",
+    "@alicloud/console-shared-utils": "^0.4.4",
     "d3-sankey": "^0.12.3",
     "tslib": "^1.10.0"
   },
