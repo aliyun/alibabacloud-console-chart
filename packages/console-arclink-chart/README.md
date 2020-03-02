@@ -1,7 +1,7 @@
 ---
 name: console-arclink-chart
 zhName: 弧长链接图
-lab: 1
+sort: 13
 ---
 
 # 弧长链接API

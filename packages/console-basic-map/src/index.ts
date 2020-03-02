@@ -12,7 +12,7 @@ import {
   // dataAdapter,
 } from '@alicloud/console-shared-utils';
 
-import mapData from './world.geo.json';
+import mapData from './world.geo';
 import source from './source';
 import transform from './transform';
 

@@ -1,6 +1,7 @@
 ---
 name: config
 zhName: 通用配置场景
+sort: 1
 ---
 
 # 通用配置场景

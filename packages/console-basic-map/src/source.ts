@@ -1,11 +1,11 @@
 import getPointAtLength from 'point-at-length';
-import { deepMix } from '@antv/util';
-import { geoPath } from 'd3-geo';
+import Utils from '@antv/util';
+import geoPath from 'd3-geo';
 
 const geoPathGenerator = geoPath();
 
 function GeoJSONConnector(data: any): any {
-  const features: any[] = deepMix([], data.features);
+  const features: any[] = Utils.deepMix([], data.features);
 
   // pre-process
   features.forEach((feature) => {

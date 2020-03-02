@@ -1,6 +1,7 @@
 ---
 name: console-miniline-chart
 zhName: 迷你曲线图
+sort: 7
 ---
 
 # 迷你曲线图API

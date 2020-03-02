@@ -1,6 +1,7 @@
 ---
 name: console-dot-chart
 zhName: 散点图
+sort: 4
 ---
 
 # 散点图API

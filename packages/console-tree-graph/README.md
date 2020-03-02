@@ -1,7 +1,7 @@
 ---
 name: console-tree-graph
 zhName: 基本树图
-lab: 1
+sort: 14
 ---
 
 # 树图API

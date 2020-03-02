@@ -1,6 +1,7 @@
 ---
 name: console-rose-chart
 zhName: 玫瑰图
+sort: 10
 ---
 
 # 玫瑰图API

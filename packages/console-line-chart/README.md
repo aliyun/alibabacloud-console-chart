@@ -1,6 +1,7 @@
 ---
 name: console-line-chart
 zhName: 折线图
+sort: 6
 ---
 
 # 线图API

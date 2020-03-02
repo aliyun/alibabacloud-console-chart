@@ -1,6 +1,7 @@
 ---
 name: console-gauge-chart
 zhName: 仪表图
+sort: 12
 ---
 
 # 雷达图API

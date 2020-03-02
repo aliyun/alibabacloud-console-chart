@@ -1,6 +1,7 @@
 ---
 name: console-box-chart
 zhName: 箱型图
+lab: 1
 ---
 
 # 箱型图API

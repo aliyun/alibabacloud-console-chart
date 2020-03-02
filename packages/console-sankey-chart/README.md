@@ -1,6 +1,7 @@
 ---
 name: console-sankey-chart
 zhName: 桑基图
+sort: 11
 ---
 
 # 桑基图API

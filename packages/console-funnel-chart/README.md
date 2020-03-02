@@ -1,6 +1,7 @@
 ---
 name: console-funnel-chart
 zhName: 漏斗图
+sort: 5
 ---
 
 # 漏斗图API

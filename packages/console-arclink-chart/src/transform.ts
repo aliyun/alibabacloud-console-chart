@@ -2,7 +2,9 @@
  * for Arc Diagram (edges without weight) / Chord Diagram (edges with source and target weight)
  * graph data required (nodes, edges)
  */
-import { forIn, isArray, values, isFunction } from '@antv/util';
+import Utils from '@antv/util';
+
+const { forIn, isArray, values, isFunction } = Utils;
 
 const DEFAULT_OPTIONS = {
   y: 0,

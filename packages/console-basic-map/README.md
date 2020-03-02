@@ -1,6 +1,7 @@
 ---
 name: console-basic-map
 zhName: 基本地图
+sort: 15
 ---
 
 # 基本地图API

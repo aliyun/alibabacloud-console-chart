@@ -1,4 +1,6 @@
-import { isFunction } from '@antv/util';
+import Utils from '@antv/util';
+
+const isFunction = Utils.isFunction;
 
 const DEFAULT_OPTIONS: Options = {
   nodes(d: any) {

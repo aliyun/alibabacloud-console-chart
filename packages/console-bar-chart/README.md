@@ -1,6 +1,7 @@
 ---
 name: console-bar-chart
 zhName: 柱状图
+sort: 2
 ---
 
 # 柱状图API

@@ -1,6 +1,7 @@
 ---
 name: console-radar-chart
 zhName: 雷达图
+sort: 9
 ---
 
 # 雷达图API

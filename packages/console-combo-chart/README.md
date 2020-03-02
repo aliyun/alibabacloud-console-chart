@@ -1,6 +1,7 @@
 ---
 name: console-combo-chart
 zhName: 混合图
+sort: 3
 ---
 
 # 混合图API

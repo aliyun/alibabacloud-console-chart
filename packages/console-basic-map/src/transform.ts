@@ -1,4 +1,4 @@
-import { isArray, isString } from '@antv/util';
+import Utils from '@antv/util';
 
 import { getField } from './option-parser';
 
@@ -32,11 +32,11 @@ function transform(view: any, options: Options): void {
   const field = getField(options);
   // @ts-ignore
   let geoView = options.geoView || options.geoDataView; // alias
-  if (isString(geoView)) {
+  if (Utils.isString(geoView)) {
     geoView = view.dataSet.getView(geoView);
   }
   const as = options.as;
-  if (!isArray(as) || as.length !== 2) {
+  if (!Utils.isArray(as) || as.length !== 2) {
     throw new TypeError('Invalid as: it must be an array with 2 strings (e.g. [ "x", "y" ])!');
   }
   const lonField = as[0];

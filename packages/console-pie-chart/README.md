@@ -1,6 +1,7 @@
 ---
 name: console-pie-chart
 zhName: 饼图
+sort: 8
 ---
 
 # 饼图API
