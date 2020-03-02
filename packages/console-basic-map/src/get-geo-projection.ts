@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { isString, isFunction } from '@antv/util';
 import * as d3Geo from 'd3-geo';
 import * as d3GeoProjection from 'd3-geo-projection';
@@ -8,7 +9,7 @@ import * as d3CompositeProjection from 'd3-composite-projections';
  * @param {string|function} projection  projection name or projection function
  * @param {boolean} [exportRaw = false] - whether return the raw projection or not
  * */
-export default (projection: string, exportRaw = false) => {
+export default (projection: any, exportRaw = false) => {
   if (isFunction(projection)) {
     return exportRaw ? projection : projection();
   }

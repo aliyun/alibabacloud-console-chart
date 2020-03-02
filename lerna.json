@@ -26,7 +26,8 @@
     "packages/console-shared-utils",
     "packages/console-tree-graph",
     "packages/console-sankey-chart",
-    "packages/console-basic-map"
+    "packages/console-basic-map",
+    "console-gauge-chart"
   ],
   "version": "0.4.4"
 }

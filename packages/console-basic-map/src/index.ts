@@ -1,15 +1,15 @@
 import {
-  propertyAssign,
-  propertyMap,
-  g2Tooltip,
-  drawLine,
+  // propertyAssign,
+  // propertyMap,
+  // g2Tooltip,
+  // drawLine,
   g2Factory,
-  g2Legend,
-  g2Guide,
-  getFinalGeomColors,
+  // g2Legend,
+  // g2Guide,
+  // getFinalGeomColors,
   getConsoleConfig,
   Utils,
-  dataAdapter,
+  // dataAdapter,
 } from '@alicloud/console-shared-utils';
 
 import mapData from './world.geo.json';
