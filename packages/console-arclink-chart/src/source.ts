@@ -1,4 +1,4 @@
-import { assign, isFunction } from '@antv/util';
+import { isFunction } from '@antv/util';
 
 const DEFAULT_OPTIONS: Options = {
   nodes(d: any) {
@@ -17,7 +17,7 @@ export interface Options {
 }
 
 function source(data: any, options?: Options): any {
-  options = assign({}, DEFAULT_OPTIONS, options);
+  options = Object.assign({}, DEFAULT_OPTIONS, options || {});
   const { nodes, edges } = options;
   if (nodes && !isFunction(nodes)) {
     throw new TypeError('Invalid nodes: must be a function!');

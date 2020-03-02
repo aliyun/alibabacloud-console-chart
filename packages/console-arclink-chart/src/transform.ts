@@ -2,7 +2,7 @@
  * for Arc Diagram (edges without weight) / Chord Diagram (edges with source and target weight)
  * graph data required (nodes, edges)
  */
-import { assign, forIn, isArray, values, isFunction } from '@antv/util';
+import { forIn, isArray, values, isFunction } from '@antv/util';
 
 const DEFAULT_OPTIONS = {
   y: 0,
@@ -176,8 +176,8 @@ function _locatingEdges(nodeById, edges, options) {
   }
 }
 
-function transform(dv: any, options?: any) {
-  options = assign({}, DEFAULT_OPTIONS, options);
+function transform(dv: any, options: any = {}) {
+  options = Object.assign({}, DEFAULT_OPTIONS, options);
   const nodeById = {};
   let nodes = dv.nodes;
   const edges = dv.edges;
