@@ -1,53 +1,58 @@
-import { isArray } from '@antv/util';
-import { geoPath } from 'd3-geo';
-import getPointAtLength from 'point-at-length';
-import getGeoProjection from './get-geo-projection';
+import { isArray, isString } from '@antv/util';
+
+import { getField } from './option-parser';
 
 const DEFAULT_OPTIONS: Partial<Options> = {
-  // projection: '', // default to null
-  as: ['_x', '_y', '_centroid_x', '_centroid_y'],
+  // field: 'name', // required
+  // geoView: view, // required
+  // geoDataView: view, // alias
+  as: ['_x', '_y'],
 };
-
 export interface Options {
-  projection: string;
-  as?: string[];
+  field: string;
+  geoDataView: any;
+  as?: [string, string];
 }
 
-function transform(dataView: any, options: Options): void {
-  if (dataView.dataType !== 'geo' && dataView.dataType !== 'geo-graticule') {
-    throw new TypeError('Invalid dataView: this transform is for Geo data only!');
-  }
+function geoFeatureByName(data: any, name: string): any {
+  const rows = data;
+  let result;
+  rows.some((feature) => {
+    if (feature.name === name) {
+      result = feature;
+      return true;
+    }
+    return false;
+  });
+  return result;
+}
+
+function transform(view: any, options: Options): void {
   options = Object.assign({} as Options, DEFAULT_OPTIONS, options);
-  let projection = options.projection;
-  if (!projection) {
-    throw new TypeError('Invalid projection!');
+  const field = getField(options);
+  // @ts-ignore
+  let geoView = options.geoView || options.geoDataView; // alias
+  if (isString(geoView)) {
+    geoView = view.dataSet.getView(geoView);
   }
-  projection = getGeoProjection(projection);
-  // @ts-ignore;
-  const geoPathGenerator = geoPath(projection);
   const as = options.as;
-  if (!isArray(as) || as.length !== 4) {
-    throw new TypeError('Invalid as: it must be an array with 4 strings (e.g. [ "x", "y", "cX", "cY" ])!');
+  if (!isArray(as) || as.length !== 2) {
+    throw new TypeError('Invalid as: it must be an array with 2 strings (e.g. [ "x", "y" ])!');
   }
-  dataView._projectedAs = as;
-  const [lonField, latField, centroidX, centroidY] = as;
-  dataView.rows.forEach((row) => {
-    row[lonField] = [];
-    row[latField] = [];
-    const pathData = geoPathGenerator(row);
-    if (pathData) {
-      // TODO projection returns null
-      const points = getPointAtLength(pathData);
-      points._path.forEach((point) => {
-        row[lonField].push(point[1]);
-        row[latField].push(point[2]);
-      });
-      const centroid = geoPathGenerator.centroid(row);
-      row[centroidX] = centroid[0];
-      row[centroidY] = centroid[1];
+  const lonField = as[0];
+  const latField = as[1];
+  view.forEach((row) => {
+    const feature = geoFeatureByName(geoView, row[field]);
+    if (feature) {
+      if (geoView._projectedAs) {
+        row[lonField] = feature[geoView._projectedAs[0]];
+        row[latField] = feature[geoView._projectedAs[1]];
+      } else {
+        row[lonField] = feature.longitude;
+        row[latField] = feature.latitude;
+      }
     }
   });
-  dataView.rows = dataView.rows.filter((row) => row[lonField].length !== 0);
 }
 
 export default transform;

@@ -24,8 +24,6 @@
   "dependencies": {
     "point-at-length": "^1.0.2",
     "d3-geo": "~1.6.4",
-    "d3-geo-projection": "~2.1.2",
-    "d3-composite-projections": "^1.2.0",
     "@antv/util": "^2.0.6",
     "@alicloud/console-shared-utils": "^0.4.4",
     "tslib": "^1.10.0"
