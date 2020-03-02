@@ -7,7 +7,8 @@ import {
   Utils,
 } from '@alicloud/console-shared-utils';
 
-import DataSet from '@antv/data-set';
+import source from './source';
+import transform from './transform';
 
 const COMPONENT_NAME = 'ConsoleArclinkChart';
 
@@ -35,11 +36,8 @@ const cfg = {
       edges: linksData.data || [],
     };
 
-    const ds = new DataSet();
-    const dv = ds.createView().source(adaptData, {
-      type: 'graph'
-    });
-    dv.transform({
+    const dv = source(adaptData);
+    transform(dv, {
       type: 'diagram.arc',
       marginRatio: 0.5
     });
