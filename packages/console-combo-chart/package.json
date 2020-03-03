@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-combo-chart",
-  "version": "0.4.4",
+  "version": "0.5.0-alpha.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -22,7 +22,7 @@
   "repository": "https://github.com/aliyun/alibabacloud-console-chart/tree/master/packages/console-bar-chart",
   "license": "MIT",
   "dependencies": {
-    "@alicloud/console-shared-utils": "^0.4.4",
+    "@alicloud/console-shared-utils": "^0.5.0-alpha.0",
     "tslib": "^1.10.0"
   },
   "gitHead": "c79b139c3484d9590cfe3e43b106c5e718bf2ff9"

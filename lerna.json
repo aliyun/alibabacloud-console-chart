@@ -31,5 +31,5 @@
     "packages/console-box-chart",
     "packages/console-arclink-chart"
   ],
-  "version": "0.4.4"
+  "version": "0.5.0-alpha.0"
 }
