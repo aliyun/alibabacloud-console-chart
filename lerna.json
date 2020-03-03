@@ -27,7 +27,9 @@
     "packages/console-tree-graph",
     "packages/console-sankey-chart",
     "packages/console-basic-map",
-    "console-gauge-chart"
+    "packages/console-gauge-chart",
+    "packages/console-box-chart",
+    "packages/console-arclink-chart"
   ],
   "version": "0.4.4"
 }
