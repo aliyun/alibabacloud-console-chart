@@ -5,6 +5,7 @@
     "reinstall": "yarn run clear && yarn install",
     "lint": "lerna run lint",
     "publish": "lerna publish",
+    "publish-next": "lerna publish --pre-dist-tag next",
     "build": "lerna run build",
     "site:push": "cd site && yarn push-build",
     "site:dev": "cd site && yarn dev",
