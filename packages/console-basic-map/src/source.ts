@@ -1,7 +1,8 @@
 import getPointAtLength from 'point-at-length';
 import Utils from '@antv/util';
-import geoPath from 'd3-geo';
+import * as d3Geo from 'd3-geo';
 
+const geoPath = d3Geo.geoPath;
 const geoPathGenerator = geoPath();
 
 function GeoJSONConnector(data: any): any {
