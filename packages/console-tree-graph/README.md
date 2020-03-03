@@ -9,7 +9,7 @@ sort: 14
 # 引入方式
 
 ```javascript
-import ConsoleTreeGraph from '@alicloud/console-tree-graph';
+import ConsoleTreeGraph from '@alicloud/console-tree-graph@next';
 ```
 
 注意，目前为了减少打包之后的体积大小，暂不将Graph相关的加入`console-chart`包内，所以只能通过单包引入的方式使用。

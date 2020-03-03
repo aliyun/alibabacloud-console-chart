@@ -9,7 +9,7 @@ sort: 15
 # 引入方式
 
 ```javascript
-import ConsoleBasicMap from '@alicloud/console-basic-map';
+import ConsoleBasicMap from '@alicloud/console-basic-map@next';
 ```
 
 # 示例 Demo

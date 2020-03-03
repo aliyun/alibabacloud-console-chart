@@ -10,7 +10,7 @@ sort: 13
 
 暂时只支持单独引用。
 ```javascript
-import ConsoleArclinkChart from '@alicloud/console-arclink-chart';
+import ConsoleArclinkChart from '@alicloud/console-arclink-chart@next';
 ```
 
 # 示例 Demo

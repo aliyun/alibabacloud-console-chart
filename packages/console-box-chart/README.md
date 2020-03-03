@@ -9,7 +9,7 @@ lab: 1
 # 引入方式
 
 ```javascript
-import ConsoleBoxChart from '@alicloud/console-box-chart';
+import ConsoleBoxChart from '@alicloud/console-box-chart@next';
 ```
 
 # 示例 Demo

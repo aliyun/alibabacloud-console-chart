@@ -9,7 +9,7 @@ sort: 12
 # 引入方式
 
 ```javascript
-import ConsoleGagueChart from '@alicloud/console-gauge-chart';
+import ConsoleGagueChart from '@alicloud/console-gauge-chart@next';
 ```
 
 # 示例 Demo
