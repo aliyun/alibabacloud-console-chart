@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{tJHa:function(n,t,a){"use strict";a.r(t);var e=a("q1tI"),o=a.n(e),E=a("nRmr"),c=[{name:"各类云产品占比",data:[["计算类",45],["资源类",26],["服务类",12],["工具类",8]]}],r={colors:["#EE6DD2","#EE746D","#B4C5EE","#B3EE26"]};t.default=function(){return o.a.createElement(E.g,{data:c,config:r,height:300})}}}]);
-//# sourceMappingURL=9-d9c736f1b11bbe4a98aa.js.map
