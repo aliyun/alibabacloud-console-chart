@@ -1,5 +1,6 @@
 import React from 'react';
-import ConsoleArclinkChart from '@alicloud/console-arclink-chart';
+// import ConsoleArclinkChart from '@alicloud/console-arclink-chart';
+import ConsoleArclinkChart from '../src';
 
 const config = {
   padding: 120,

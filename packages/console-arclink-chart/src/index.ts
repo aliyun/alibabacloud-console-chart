@@ -2,9 +2,12 @@ import {
   g2Tooltip,
   g2Factory,
   g2Legend,
-  // getFinalGeomColors,
+  getFinalGeomColors,
   getConsoleConfig,
   Utils,
+  g2Style,
+  g2Size,
+  g2Label,
 } from '@alicloud/console-shared-utils';
 
 import source from './source';
@@ -20,6 +23,9 @@ const cfg = {
     const newConfig = Utils.merge({
       legend: false,
       polar: false,
+      tooltip: {
+        showTitle: false
+      }
     }, defaultConfig, config);
     // TODO 处理padding
     return Object.assign({}, props, {
@@ -36,6 +42,8 @@ const cfg = {
       edges: linksData.data || [],
     };
 
+    const colors = getFinalGeomColors(data, this.consoleTheme);
+
     const dv = source(adaptData);
     transform(dv, {
       type: 'diagram.arc',
@@ -44,33 +52,19 @@ const cfg = {
 
     const { polar = false } = config;
 
-    chart.tooltip({
-      showTitle: false,
-      showMarkers: false
-    });
-    chart.scale({
-      x: {
-        nice: true,
-        sync: true,
-      },
-      y: {
-        nice: true,
-        sync: true,
-      },
-    });
-
     const edgeView = chart.view();
     if (polar) {
       edgeView.coord('polar').reflect('y');
     }
     edgeView.source(dv.edges);
     edgeView.axis(false);
-    edgeView.edge()
+    const edgeGeom = edgeView.edge()
       .position('x*y')
       .shape('arc')
-      .color('source')
-      .opacity(0.5)
+      .color('source', colors)
       .tooltip('source*target');
+
+    g2Style(edgeGeom, config, { opacity: 0.5 });
 
     const nodeView = chart.view();
     if (polar) {
@@ -78,37 +72,32 @@ const cfg = {
     }
     nodeView.source(dv.nodes);
     nodeView.axis(false);
+    let nodeGeom = null;
     if (polar) {
-      nodeView.point()
+      nodeGeom = nodeView.point()
       .position('x*y')
       .shape('circle')
-      .size('value')
-      .color('id')
-      .opacity(0.5)
-      .style({
-        stroke: 'grey'
-      })
-      .label('name', {
+      .color('id', colors);
+
+      g2Label(nodeGeom, config, ['name', {
         labelEmit: true
-      });
+      }]);
     } else {
-      nodeView.point()
+      nodeGeom = nodeView.point()
       .position('x*y')
       .shape('circle')
-      .size('value')
-      .color('id')
-      .opacity(0.5)
-      .style({
-        stroke: 'grey'
-      })
-      .label('name', { // label configuration for non-polar coord
+      .color('id', colors);
+
+      g2Label(nodeGeom, config, ['name', {
         offset: -60,
         style: {
           textAlign: 'left',
         },
         rotate: Math.PI / 2,
-      });
+      }]);
     }
+    g2Style(nodeGeom, config, { stroke: 'grey', opacity: 0.5 });
+    g2Size(nodeGeom, config, 'value');
 
     g2Legend(chart, config, config.legend);
     g2Tooltip(chart, config, config.tooltip);
