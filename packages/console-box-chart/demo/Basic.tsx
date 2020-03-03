@@ -1,6 +1,5 @@
 import React from 'react';
-// import ConsoleBoxChart from '@alicloud/console-box-chart';
-import ConsoleBoxChart from '../src';
+import ConsoleBoxChart from '@alicloud/console-box-chart';
 
 const data = [
   {

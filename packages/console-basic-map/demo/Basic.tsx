@@ -1,6 +1,5 @@
 import React from 'react';
-// import ConsoleBoxChart from '@alicloud/console-box-chart';
-import ConsoleBasicMap from '../src';
+import ConsoleBasicMap from '@alicloud/console-basic-map';
 
 const config = {};
 

@@ -14,6 +14,9 @@ import ConsoleBoxChart from '@alicloud/console-box-chart';
 
 # 示例 Demo
 
+## 基本使用
+
+[MDXInstruction:importDemo:Basic](./demo/Basic.tsx)
 
 # 配置 Config
 

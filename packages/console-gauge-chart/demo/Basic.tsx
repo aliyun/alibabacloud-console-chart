@@ -1,6 +1,5 @@
 import React from 'react';
-// import ConsoleGagueChart from '@alicloud/console-gauge-chart';
-import ConsoleGagueChart from '../src';
+import ConsoleGagueChart from '@alicloud/console-gauge-chart';
 
 const data = [
   {
