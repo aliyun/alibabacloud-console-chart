@@ -9,6 +9,7 @@ export default function(chart: any, config: any, componentConfig?: any) {
     const xAxisConfig = other;
 
     if (rotate) {
+      if (!xAxisConfig.label) xAxisConfig.label = {};
       xAxisConfig.label.textStyle = {
         textAlign: 'start',
         rotate,
