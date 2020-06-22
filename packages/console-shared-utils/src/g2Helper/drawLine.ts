@@ -34,7 +34,6 @@ function drawLine(chart: any, config: any, yAxisKey = 'y') {
       .shape(lineShape)
       .active(false);
   } else if (config.area && !config.stack) {
-    console.log(config);
     chart
       .area()
       .position(['x', yAxisKey])
