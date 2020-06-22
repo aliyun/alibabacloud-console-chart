@@ -10,12 +10,14 @@ import Unit from './Unit';
 import Smooth from './Smooth';
 import Dot from './Dot';
 import Stack from './Stack';
+import XAxisAsync from './XAxisAsync';
 
 storiesOf('ConsoleLineChart', module)
   .add('基本折线图', () => <Basic />)
   .add('多组数据', () => <Multi />)
   .add('自定义X轴label', () => <XLabel />)
   .add('自定义x轴时间刻度间距', () => <XAxisTickInterval />)
+  .add('X轴动态变化', XAxisAsync)
   .add('设置双轴', () => <DoubleAxis />)
   .add('配置顶部单位', () => <Unit />)
   .add('设置光滑曲线', () => <Smooth />)

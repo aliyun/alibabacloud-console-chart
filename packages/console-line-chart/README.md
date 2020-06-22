@@ -31,6 +31,10 @@ import { ConsoleLineChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:XAxisTickInterval](./demo/XAxisTickInterval.tsx)
 
+## 动态显示X轴
+
+[MDXInstruction:importDemo:XAxisAsync](./demo/XAxisAsync.tsx)
+
 ## 设置双轴
 
 [MDXInstruction:importDemo:DoubleAxis](./demo/DoubleAxis.tsx)
