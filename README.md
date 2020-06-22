@@ -1,6 +1,16 @@
 # Console Chart
 
-> Console Chart 是阿里云云管控解决方案开发套件的一部分。旨在为用户提供一款**开箱即用、统一视觉方案**的图表组件库。
+Console Chart 是阿里云云管控解决方案开发套件的一部分，旨在为用户提供一款**开箱即用、统一视觉方案**的图表组件库。
+
+<p align="center">
+<a href=" https://www.alibabacloud.com"><img src="https://aliyunsdk-pages.alicdn.com/icons/AlibabaCloud.svg"></a>
+</p>
+
+[![NPM version][npm-image]][npm-url]
+
+[npm-image]: https://img.shields.io/npm/v/@alicloud/console-chart.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@alicloud/console-chart
+
 
 ## Install
 

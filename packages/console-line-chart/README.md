@@ -31,6 +31,15 @@ import { ConsoleLineChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:XAxisTickInterval](./demo/XAxisTickInterval.tsx)
 
+## 动态显示X轴
+
+[MDXInstruction:importDemo:XAxisAsync](./demo/XAxisAsync.tsx)
+
+## y轴最小值与正整数
+通过设置`yAxis.min`来设置坐标轴显示的最小值，通过`yAxis.formatter`来控制不显示浮点数。
+
+[MDXInstruction:importDemo:YAxisMin](./demo/YAxisMin.tsx)
+
 ## 设置双轴
 
 [MDXInstruction:importDemo:DoubleAxis](./demo/DoubleAxis.tsx)
@@ -50,6 +59,14 @@ import { ConsoleLineChart } from '@alicloud/console-chart';
 ## 面积堆栈图
 
 [MDXInstruction:importDemo:Stack](./demo/Stack.tsx)
+
+## 颜色渐变图
+
+通过数据列里的`color`属性来进行指定，如果传入的值为字符串，则将该颜色应用到该数据列的`线图`和`面积图`上，也可以传入一个数组，第一个值指定`线图`的颜色，第二个值指定`面积图`的颜色
+
+颜色色值支持传入渐变，渐变规则请看[G2渐变色原始文档](https://g2-v3.antv.vision/zh/docs/api/graphics#%E6%B8%90%E5%8F%98%E8%89%B2)
+
+[MDXInstruction:importDemo:GradualColor](./demo/GradualColor.tsx)
 
 # Config 配置
 
