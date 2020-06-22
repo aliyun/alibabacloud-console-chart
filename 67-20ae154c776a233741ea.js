@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[67],{nlTH:function(a,n,t){"use strict";t.r(n);var e=t("q1tI"),c=t.n(e),i=t("nRmr"),o=[{name:"Nat网关",data:[["规格",3],["动态数",4],["SDK支持语言",4]]},{name:"Slb负载均衡",data:[["规格",12],["动态数",11],["SDK支持语言",0]]}];n.default=function(){return c.a.createElement(i.a,{data:o,config:{stack:!0},height:300})}}}]);
+//# sourceMappingURL=67-20ae154c776a233741ea.js.map
