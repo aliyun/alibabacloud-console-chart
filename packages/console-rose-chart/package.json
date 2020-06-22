@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-rose-chart",
-  "version": "0.4.8",
+  "version": "0.4.9",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -22,7 +22,7 @@
   "repository": "https://github.com/aliyun/alibabacloud-console-chart/tree/master/packages/console-rose-chart",
   "license": "MIT",
   "dependencies": {
-    "@alicloud/console-shared-utils": "^0.4.8",
+    "@alicloud/console-shared-utils": "^0.4.9",
     "tslib": "^1.10.0"
   },
   "gitHead": "c79b139c3484d9590cfe3e43b106c5e718bf2ff9"
