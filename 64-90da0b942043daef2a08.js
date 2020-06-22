@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[64],{YujY:function(a,n,e){"use strict";e.r(n);var t=e("q1tI"),d=e.n(t),i=e("nRmr"),r=[{name:"阿里云Nat网关价格/月",data:[["Small",306],["Middle",586.5],["Large",1147.5],["XLarge.1",2040]]}],c={padding:[50,50,100,100]};n.default=function(){return d.a.createElement(i.a,{data:r,height:300,config:c})}}}]);
+//# sourceMappingURL=64-90da0b942043daef2a08.js.map
