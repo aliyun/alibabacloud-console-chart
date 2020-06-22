@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[25],{"KsW/":function(n,a,e){"use strict";e.r(a);var t=e("q1tI"),i=e.n(t),d=e("nRmr"),c=[{name:"年份数据",data:[["2013",14],["2014",15],["2015",16],["2016",18],["2017",20],["2018",21],["2019",24.3],["2020",25]]}],o={axis:!0,label:!1,padding:[50,50,50,50],legend:!1};a.default=function(){return i.a.createElement(d.i,{data:c,config:o,height:300})}}}]);
-//# sourceMappingURL=25-fd8954f8860a270a8495.js.map
