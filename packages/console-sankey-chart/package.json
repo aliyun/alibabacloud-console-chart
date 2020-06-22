@@ -1,6 +1,6 @@
 {
   "name": "@alicloud/console-sankey-chart",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -22,7 +22,7 @@
   "repository": "https://github.com/aliyun/alibabacloud-console-chart/tree/master/packages/console-sankey-chart",
   "license": "MIT",
   "dependencies": {
-    "@alicloud/console-shared-utils": "^0.4.7",
+    "@alicloud/console-shared-utils": "^0.4.8",
     "d3-sankey": "^0.12.3",
     "tslib": "^1.10.0"
   },
