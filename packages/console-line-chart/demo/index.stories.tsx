@@ -11,6 +11,7 @@ import Smooth from './Smooth';
 import Dot from './Dot';
 import Stack from './Stack';
 import XAxisAsync from './XAxisAsync';
+import YAxisMin from './YAxisMin';
 
 storiesOf('ConsoleLineChart', module)
   .add('基本折线图', () => <Basic />)
@@ -18,6 +19,7 @@ storiesOf('ConsoleLineChart', module)
   .add('自定义X轴label', () => <XLabel />)
   .add('自定义x轴时间刻度间距', () => <XAxisTickInterval />)
   .add('X轴动态变化', XAxisAsync)
+  .add('Y轴最小值与正整数', YAxisMin)
   .add('设置双轴', () => <DoubleAxis />)
   .add('配置顶部单位', () => <Unit />)
   .add('设置光滑曲线', () => <Smooth />)

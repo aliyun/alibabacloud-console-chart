@@ -35,6 +35,11 @@ import { ConsoleLineChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:XAxisAsync](./demo/XAxisAsync.tsx)
 
+## y轴最小值与正整数
+通过设置`yAxis.min`来设置坐标轴显示的最小值，通过`yAxis.formatter`来控制不显示浮点数。
+
+[MDXInstruction:importDemo:YAxisMin](./demo/YAxisMin.tsx)
+
 ## 设置双轴
 
 [MDXInstruction:importDemo:DoubleAxis](./demo/DoubleAxis.tsx)
