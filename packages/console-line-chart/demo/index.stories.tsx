@@ -12,6 +12,7 @@ import Dot from './Dot';
 import Stack from './Stack';
 import XAxisAsync from './XAxisAsync';
 import YAxisMin from './YAxisMin';
+import GradualColor from './GradualColor';
 
 storiesOf('ConsoleLineChart', module)
   .add('基本折线图', () => <Basic />)
@@ -24,4 +25,5 @@ storiesOf('ConsoleLineChart', module)
   .add('配置顶部单位', () => <Unit />)
   .add('设置光滑曲线', () => <Smooth />)
   .add('线条带点', () => <Dot />)
-  .add('面积堆栈图', () => <Stack />);
+  .add('面积堆栈图', () => <Stack />)
+  .add('颜色渐变图', GradualColor)
