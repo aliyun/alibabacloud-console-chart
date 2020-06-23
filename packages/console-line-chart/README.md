@@ -68,6 +68,14 @@ import { ConsoleLineChart } from '@alicloud/console-chart';
 
 [MDXInstruction:importDemo:GradualColor](./demo/GradualColor.tsx)
 
+## Legend点击事件
+
+通过`event`属性来配置事件，配置`legend-item:click`对应的事件即可以配置图例点击事件。注意，由于内部实现和React自带的Function Component优化有冲突，`event`属性配置的事件不会触发`function component`的更新，所以这时候请使用`class`语法。
+
+更多事件请看[G2-图表事件](https://g2-v3.antv.vision/zh/docs/manual/tutorial/event)
+
+[MDXInstruction:importDemo:LegendClick](./demo/LegendClick.tsx)
+
 # Config 配置
 
 # 数据列配置
