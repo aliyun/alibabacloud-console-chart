@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[73],{WnK0:function(n,a,i){"use strict";i.r(a);var e=i("q1tI"),t=i.n(e),o=i("nRmr"),r=[{name:"等级",data:[["11",55],["12",26.8],["13",112.8],["14",81.5],["15",61.2],["16",7],["17",12]]}],d={tooltip:{itemTpl:'<li data-index={index}><span style="background-color:{color};width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:8px;"></span>v{name}: {value}%</li>'}};a.default=function(){return t.a.createElement(o.g,{data:r,config:d,height:300})}}}]);
+//# sourceMappingURL=73-7b02e004ead5a262ee47.js.map
