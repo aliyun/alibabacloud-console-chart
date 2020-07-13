@@ -14,6 +14,7 @@ import XAxisAsync from './XAxisAsync';
 import YAxisMin from './YAxisMin';
 import GradualColor from './GradualColor';
 import LegendClick from './LegendClick';
+import OneDotToLine from './OneDotToLine';
 
 storiesOf('ConsoleLineChart', module)
   .add('基本折线图', () => <Basic />)
@@ -29,3 +30,4 @@ storiesOf('ConsoleLineChart', module)
   .add('面积堆栈图', () => <Stack />)
   .add('颜色渐变图', GradualColor)
   .add('图例点击控制', LegendClick)
+  .add('只有一个点数据时展示线', OneDotToLine)
