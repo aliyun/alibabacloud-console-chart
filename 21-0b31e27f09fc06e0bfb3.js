@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{"6Q5K":function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),i=t.n(a),d=t("nRmr"),r=[{name:"A产品",data:[["2015",20]]}],l={};n.default=function(){return 1===r[0].data.length&&(l.guide={line:{start:["0%","0"],end:["100%","0"],lineStyle:{stroke:"#2196F3",lineWidth:2,lineDash:[0,0]}}}),i.a.createElement(d.e,{data:r,config:l,height:300})}}}]);
+//# sourceMappingURL=21-0b31e27f09fc06e0bfb3.js.map

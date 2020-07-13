@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[42],{Qp4p:function(n,a,e){"use strict";e.r(a);var t=e("q1tI"),c=e.n(t),i=e("nRmr"),o=[{name:"云产品数据",data:[["a",1892],["b",7292],["c",5714],["d",5354],["e",2014],["f",22],["g",1123],["h",5218]]}],p={};a.default=function(){return c.a.createElement(i.c,{data:o,config:p,height:300})}}}]);
+//# sourceMappingURL=42-c3ff1be0a9e10dcf6cd7.js.map
