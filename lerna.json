@@ -27,5 +27,5 @@
     "packages/console-tree-graph",
     "packages/console-sankey-chart"
   ],
-  "version": "0.4.9"
+  "version": "0.4.10-alpha.0"
 }
